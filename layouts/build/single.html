@@ -10,7 +10,9 @@
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <table class="collapse ba br2 b--black-10 pv2 ph3 mt4">
+
+        <h4 class="mb2">General Information</h4>
+        <table class="collapse ba br2 b--black-10 pv2 ph3 mb4">
           <tr class="striped--white">
             <th class="pa2 tl">Tag</th>
             <td class="pa2">{{ .Params.build_tag }}</td>
@@ -24,7 +26,7 @@
             <td class="pa2">{{ .Params.build_m }}</td>
           </tr>
         </table>
-        
+
         {{ .Content }}
       </div>
     </article>

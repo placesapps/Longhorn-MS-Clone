@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Experience Longhorn"
 theme = "ananke"
 Paginate = 12
+SectionPagesMenu = "main"
 
 [params]
 description = "A look at a defining Microsoft project"
