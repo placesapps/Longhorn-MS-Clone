@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          {{ humanize .Section | upper  }}
+        </p>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        <table class="collapse ba br2 b--black-10 pv2 ph3 mt4">
+          <tr class="striped--white">
+            <th class="pa2 tl">Tag</th>
+            <td class="pa2">{{ .Params.build_tag }}</td>
+          </tr>
+          <tr class="striped--white">
+            <th class="pa2 tl">Architecture</th>
+            <td class="pa2">{{ .Params.build_arch }}</td>
+          </tr>
+          <tr class="striped--white">
+            <th class="pa2 tl">Milestone</th>
+            <td class="pa2">{{ .Params.build_m }}</td>
+          </tr>
+        </table>
+        
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+{{ end }}
