@@ -1,0 +1,13 @@
+baseURL = "https://longhorn.ms/"
+languageCode = "en-us"
+title = "Experience Longhorn"
+theme = "ananke"
+Paginate = 12
+
+[params]
+description = "A look at a defining Microsoft project"
+gitlab = "https://gitlab.com/hounsell/longhorn-ms"
+featured_image = "/images/header-01.jpg"
+
+[blackfriday]
+hrefTargetBlank = true
