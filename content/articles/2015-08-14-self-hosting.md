@@ -64,6 +64,6 @@ I have re-created the VoteNow application using the orignal code and omitted the
   <a href="/images/4003-shelf-host-toast.mp4">Download video</a>
 </video>
 
-[4033 Vote Right Now](/download/4033-vote-right-now)
+[4033 Vote Right Now](/download/4033-vote-right-now.zip)
 
 ##### Thanks to UltraWindows for helping me understand VoteNow

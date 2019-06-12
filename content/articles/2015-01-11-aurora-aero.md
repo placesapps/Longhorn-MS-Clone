@@ -31,9 +31,9 @@ Build 4066 is the first build where above described "Jade to Aero conversion" wo
 
 Note that converting Jade to Aero will not enable the transparent Aero Glass theme, but will show up using greenish borders. For 4074 and 4066 patched files exist to enable transparent window borders.
 
-[DWM Aero theme for 4074](/download/dwm-aero-theme-for-4074)
+[DWM Aero theme for 4074](/download/dwm-aero-theme-for-4074.rar)
 
-[Patched Desksrv for 4066](/download/patched-desksrv-for-4066)
+[Patched Desksrv for 4066](/download/patched-desksrv-for-4066.zip)
 
 #### Checks
 
@@ -49,11 +49,11 @@ The original Jade theme files in both build 4066 and 4074 do indeed include a re
 
 Luckily, a BAML file using an updated format has since been found and is available for download below. To make the APPA work, simply replace resource 481 in the STREAM folder of the original Jade theme. In the download you will find a correct 481 resource file, a ready patched aero.msstyles and also a text dump of the BAML that provides the APPA.
 
-[Aurora for vanilla 4074](/download/aurora-vanilla-4074)
+[Aurora for vanilla 4074](/download/aurora-vanilla-4074.zip)
 
 This package includes the transparent DWM theme by BOFH patched so that it has working APPA:
 
-[4074 Transparent DWM + APPA](/download/4074-transparent-dwm-appa)
+[4074 Transparent DWM + APPA](/download/4074-transparent-dwm-appa.zip)
 
 #### Desktop aurora
 
@@ -75,7 +75,7 @@ Based on information from Robert Stein, a designer at the Longhorn UX team, we k
 
 No traces of this aurora are present in any pre-reset Longhorn builds. After the reset the system assessment tool, WinSAT, was introduced which quite noticeably uses various DirectX shader files dating from April 2004 which is still before the Longhorn project reset. Build 5219's WinSAT includes an aurora assessment remarkably similar to Robert Stein's concepts. If you'd like to have a look at this effect yourself, download the package below which includes WinSAT files from various builds. Note that by the time of build 5308, the fully DirectX rendered aurora was replaced by much less sophisticated moving PNG images with some DirectX light effects.
 
-[WinSAT files](/download/winsat-files)
+[WinSAT files](/download/winsat-files.zip)
 
 <div class="flex">
 <div class="ma2 ml0">

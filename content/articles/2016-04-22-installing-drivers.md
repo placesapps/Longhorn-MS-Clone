@@ -25,9 +25,9 @@ Right click the device and select _Install Driver _if none was installed or _
 
 Be sure to insert you driver disk right now! Below are a couple of VMWare driver packages that can be mounted to a disk on your VM.
 
-* [VMware 6.5 driver package](/download/vmware-6-5-driver-package)
-* [VMware 6.5.2 driver package](/download/vmware-6-5-2-driver-package)
-* [VMware 7.0 driver package](/download/vmware-7-0-driver-package)
+* [VMware 6.5 driver package](/download/vmware-6-5-driver-package.zip)
+* [VMware 6.5.2 driver package](/download/vmware-6-5-2-driver-package.zip)
+* [VMware 7.0 driver package](/download/vmware-7-0-driver-package.zip)
 
 You can now let the _Hardware Wizard_ install the driver for you by selecting the first option. In case you want to further specify where your driver is located you can choose the second option.
 

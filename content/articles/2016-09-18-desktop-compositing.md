@@ -158,7 +158,7 @@ Ctrl + Shift + F9
 
 This build uses the green placeholder theme by default, a patched desksrv by FZajac is available which provides glass borders. Replace desksrv with the patched copy at `C:\Windows\System32\` and `C:\Windows\System32\dllcache\`.
 
-[Patched Desksrv for 4066](/download/patched-desksrv-for-4066)
+[Patched Desksrv for 4066](/download/patched-desksrv-for-4066.zip)
 
 ### 4074
 {{< figure src="/images/40474-dwm.png" title="DWM on 4074 with a DWM theme enabled." >}}
@@ -187,6 +187,6 @@ The Aero theme can be enabled on this build. See my post titled Aero done right�
 
 Grab your VMware drivers here.
 
-* [VMware 6.5 driver package](/download/vmware-6-5-driver-package)
-* [VMware 6.5.2 driver package](/download/vmware-6-5-2-driver-package)
-* [VMware 7.0 driver package](/download/vmware-7-0-driver-package)
+* [VMware 6.5 driver package](/download/vmware-6-5-driver-package.zip)
+* [VMware 6.5.2 driver package](/download/vmware-6-5-2-driver-package.zip)
+* [VMware 7.0 driver package](/download/vmware-7-0-driver-package.zip)

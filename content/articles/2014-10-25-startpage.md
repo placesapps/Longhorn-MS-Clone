@@ -59,7 +59,7 @@ If you want to use the oobe.xml file yourself, you will need to set the computer
 
 For a long time the startpage was considered as "not accessible" because every trace of a launcher was missing and only one screenshot of the startpage in action was available. I was able to contact the original creator of both the launcher and screenshot: Stanimir Stoyanov. Stanimir wrote this launcher back in 2006 and now is finally publicly available. The launcher is written in C++ and creates a COM object registered as CShellStartPage. This is the startpage code as registered by ShellInterop.dll.
 
-[Startpage Launcher](/download/startpage-launcher)
+[Startpage Launcher](/download/startpage-launcher.zip)
 
 #### Startpage & Welcome Center
 

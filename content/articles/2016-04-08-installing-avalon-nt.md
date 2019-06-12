@@ -43,7 +43,7 @@ Before using the Longhorn feature installer, be sure to install .NET framework v
   6. When prompted for a directory, point to the _LonghornFiles_ directory in the extracted folder
   7. Wait for the wizard to finish
 
-[3683 feature installer for NT 5.x](/download/3683-feature-installer-nt-5-x)
+[3683 feature installer for NT 5.x](/download/3683-feature-installer-nt-5-x.zip)
 
 {{< youtube fA8hya-Qa08 >}}
 
@@ -63,4 +63,4 @@ Start the "Windows Future Storage' and "Windows File Promotion Manager' service
 
 In the zip below you will find a Longhorn game definition file. With mygames installed this file will appear as a game and has some extra options in the right-click context menu.
 
-[3683 feature installer extra files](/download/3683-feature-installer-extra-files)
+[3683 feature installer extra files](/download/3683-feature-installer-extra-files.zip)

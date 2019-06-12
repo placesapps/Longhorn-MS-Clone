@@ -34,7 +34,7 @@ Microsoft.WindowsMedia.Services.UX.Phodeo.PhotoWizard app
 app.Run();
 ```
 
-[405X Ophotowz](/download/405x-ophotowz)
+[405X Ophotowz](/download/405x-ophotowz.zip)
 
 The default page is a placeholder page which doesn't allow you to continue selecting photos. This placeholder can however be disabled by applying the following registry key.
 
@@ -70,7 +70,7 @@ Clicking next will now yield an error. The wizard tries to download a file from 
 
 This file is read by the `ProviderManager` which creates `ProviderInfo` instances for each available provider. The `ProviderSelectPage` uses these pieces of information to display a list of providers in a listview control.
 
-[OPhotowz Tutorial files](/download/ophotowz-tutorial-files)
+[OPhotowz Tutorial files](/download/ophotowz-tutorial-files.zip)
 
 Tricking the wizard into thinking it has a real connection with the original internal server is simple. One needs to set up a web server which can easily be done using Apache or Nginx (Windows users can install XAMPP or WAMP). Be sure to map the server to listen at port 1704 instead of the usual port 80! On the server create directory `testopw` in which a file `usa.xml` exists contain above XML snippet.
 

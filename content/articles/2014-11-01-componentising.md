@@ -22,7 +22,7 @@ As with XP Embedded a piece of software was provided that would make it possible
 
 ![](/images/targetdesigner.png)
 
-[Fixed Target Designer for 4084](/download/fixed-target-designer-for-4084)
+[Fixed Target Designer for 4084](/download/fixed-target-designer-for-4084.zip)
 
 ###### Special thanks to JaGoTu for creating a registry fix to get the Target Designer to show
 

@@ -79,7 +79,7 @@ The compiler will spit out a couple of different files by default.
 
 Alternatively, using one of the different switches ac supports, it's possible to generate debug or "full code" binaries. Full code compilation will omit creation of a baml file and instead compiles all mark-up to code in a single dll. You can download the example files and the binaries here.
 
-[Example mark-up files and binaries](/download/example-mark-up-files-and-binaries)
+[Example mark-up files and binaries](/download/example-mark-up-files-and-binaries.zip)
 
 #### The final result
 

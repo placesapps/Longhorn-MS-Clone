@@ -16,4 +16,4 @@ The second method is to replace it offline. This requires you to be able to conn
 
 Note that, although the cracks below remove the need of activation, they do not alter or remove the 180 day usage restriction (time-bomb) that may be present in the build. To remove the time-bomb you will need another tool, called TweakNT.
 
-[Activation cracks](/download/activation-cracks)
+[Activation cracks](/download/activation-cracks.zip)
