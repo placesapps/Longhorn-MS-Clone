@@ -4,6 +4,8 @@ title = "Experience Longhorn"
 theme = "ananke"
 Paginate = 12
 SectionPagesMenu = "main"
+enableGitInfo = true
+enableRobotsTXT = true
 
 [params]
 description = "A look at a defining Microsoft project"
@@ -12,3 +14,7 @@ featured_image = "/images/header-01.jpg"
 
 [blackfriday]
 hrefTargetBlank = true
+
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 80

@@ -14,3 +14,11 @@ Four authenticated screenshots have been publicly released. These were originall
 A second set that supposedly shows Build 3663 exists. These screenshots cannot be reliably authenticated however, since they were released by an anonymous source. They show a subtly different user interface in some screenshots, but it seems probable that all differences can be accounted for by customisation options included in the build.
 
 A long-standing rumour suggested that Longhorn Build 3663 did leak at some point in the past, but that the download was removed before a significant number of people were able to download it. It also asserts that no-one who had successfully downloaded it chose to share it publicly. However, there is no evidence to support this rumour, so it can be reasonably assumed that this never actually happened.
+
+### Gallery
+
+#### xBetas
+{{< gallery "xbeta1" "xbeta2" "xbeta3" "xbeta4" >}}
+
+#### Unverified
+{{< gallery "3663-1" "3663-2" "3663-3" "3663-4" "3663-5" >}}
