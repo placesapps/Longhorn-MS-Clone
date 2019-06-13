@@ -12,19 +12,37 @@
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
 
         <h4 class="mb2">General Information</h4>
-        <table class="collapse ba br2 b--black-10 pv2 ph3 mb4">
+        <table class="collapse w-100 ba br2 b--black-10 pv2 ph3 mb4">
+          {{ if .Params.build_tag }}
           <tr class="striped--white">
             <th class="pa2 tl">Tag</th>
             <td class="pa2">{{ .Params.build_tag }}</td>
           </tr>
+          {{ end }}
+          {{ if .Params.build_arch }}
           <tr class="striped--white">
             <th class="pa2 tl">Architecture</th>
-            <td class="pa2">{{ .Params.build_arch }}</td>
+            <td class="pa2">{{ delimit .Params.build_arch ", " }}</td>
           </tr>
+          {{ end }}
+          {{ if .Params.build_tag }}
           <tr class="striped--white">
             <th class="pa2 tl">Milestone</th>
-            <td class="pa2">{{ .Params.build_m }}</td>
+            <td class="pa2">{{ .Params.build_tag }}</td>
           </tr>
+          {{ end }}
+          {{ if .Params.install_date }}
+          <tr class="striped--white">
+            <th class="pa2 tl">BIOS Date</th>
+            <td class="pa2">{{ .Params.install_date }}</td>
+          </tr>
+          {{ end }}
+          {{ if .Params.install_key }}
+          <tr class="striped--white">
+            <th class="pa2 tl">Key</th>
+            <td class="pa2">{{ .Params.install_key }}</td>
+          </tr>
+          {{ end }}
         </table>
 
         {{ .Content }}
