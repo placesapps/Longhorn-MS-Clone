@@ -12,6 +12,6 @@ A system with this build was demoed at PDC 2003, showcasing the power of the Des
 ### Video
 
 <video width="100%" preload="metadata" controls="controls">
-  <source type="video/mp4" src="/images/lh4018demo.mp4" />
-  <a href="/images/lh4018demo.mp4">Download video</a>
+  <source type="video/mp4" src="lh4018demo.mp4" />
+  <a href="lh4018demo.mp4">Download video</a>
 </video>

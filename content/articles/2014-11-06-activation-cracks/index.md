@@ -4,6 +4,7 @@ author: Melcher
 type: post
 date: 2014-11-06T19:23:48+00:00
 url: /activation-cracks
+featured_image: null
 categories:
   - 'Tips &amp; tricks'
 

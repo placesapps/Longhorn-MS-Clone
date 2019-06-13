@@ -4,14 +4,12 @@ author: Melcher
 type: post
 date: 2015-03-09T21:24:14+00:00
 url: /pig-latin
-featured_image: /images/build-4029-piglatin.png
+featured_image: build-4029-piglatin.png
 categories:
   - Development
 
 ---
 While exploring Longhorn builds you might have noticed these weird spelling mistakes in the Windows branding  like; "onghornLay rofessionalPay" and wondered whether one of the developers had a breakdown while typing this. In this article I will elaborate on the exact purpose of the "onghornLay" branding.
-
-&nbsp;
 
 #### Backstory
 
@@ -23,4 +21,4 @@ A first attempt to eliminate all hard-coded strings was already made as early as
 
 During Milestone 5, Lab06 created a new iteration of the branding API which was reverse integrated into the main branch in June 2003. When builds with this new version of the API first leaked, the beta scene was quick to label these build fake. To test the implementation and check whether a hard-coded string had been replaced correctly all reference strings were altered according to a set of rules called _Pig Latin_. This made for some silly branding in all of these builds: "indowsWay onghornLay rofessionalPay". It didn't look professional at all, but it is indeed a very simple way to verify that the string had been _replaced_ successfully. To clarify: each strings containing product information loaded via the new branding API would use the Pig Latin spelling unlike hard-coded strings that would retain their normal spelling. All Pig Latin strings were removed in Milestone 7.
 
-![](/images/build-4029-piglatin.png)
+![](build-4029-piglatin.png)

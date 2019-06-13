@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-04-20T18:08:50+00:00
 url: /fixed-version-4093
-featured_image: /images/4093-fixed-1.png
+featured_image: 4093-fixed-1.png
 categories:
   - Special Download
 
@@ -28,25 +28,4 @@ We would like to thank Hounsell for hosting our website and letting us host the 
 
 ### Gallery
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/4093-fixed-4.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4093-fixed-1.png)
-</div>
-</div>
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/4093-fixed-2.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4093-fixed-3.png)
-</div>
-</div>
+{{< gallery 50 "4093-fixed-4.png" "4093-fixed-1.png" "4093-fixed-2.png" "4093-fixed-3.png" >}}

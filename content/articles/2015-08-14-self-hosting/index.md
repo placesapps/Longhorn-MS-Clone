@@ -4,13 +4,7 @@ author: Melcher
 type: post
 date: 2015-08-14T14:12:22+00:00
 url: /self-hosting
-featured_image: /images/4042votenow.png
-enclosure:
-  - |
-    |
-        https://longhorn.ms/images/4003-shelf-host-toast.mp4
-        2132636
-        video/mp4
+featured_image: 4042votenow.png
         
 categories:
   - Development
@@ -45,23 +39,13 @@ A toast notification appears after all of the above checks and another timer hav
 * Later - resets the application
 * Learn more - opens up Internet Explorer and navigates to the general self-hosting page `http://longhorn/selfhost/`
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/4042votenow.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4042votenowcollapsed.png)
-</div>
-</div>
+{{< gallery 50 "4042votenow.png" "4042votenowcollapsed.png" >}}
 
 I have re-created the VoteNow application using the orignal code and omitted the checks. The video below shows this application in action.
 
 <video width="100%" preload="metadata" controls="controls">
-  <source type="video/mp4" src="/images/4003-shelf-host-toast.mp4" />
-  <a href="/images/4003-shelf-host-toast.mp4">Download video</a>
+  <source type="video/mp4" src="4033-self-host-toast.mp4" />
+  <a href="4033-self-host-toast.mp4">Download video</a>
 </video>
 
 [4033 Vote Right Now](/download/4033-vote-right-now.zip)

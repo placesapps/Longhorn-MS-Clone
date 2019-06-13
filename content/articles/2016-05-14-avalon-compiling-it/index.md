@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-05-14T12:56:07+00:00
 url: /avalon-compiling-it
-featured_image: /images/xaml-direct.png
+featured_image: xaml-direct.png
 categories:
   - Hacking Avalon
 
@@ -27,7 +27,7 @@ Avalon introduces a mark-up language called eXtensible Application Mark-up Lang
 
 Saving this as a file with the xaml extension will create an executable "Avalon Application'. The built-in Avalon Shell Handler can load the file directly and will happily draw the interface defined in the mark-up. It will do so in an Internet Explorer window. The example mark-up above will yield the following result:
 
-![](/images/xaml-direct.png)
+![](xaml-direct.png)
 
 Note that, we used nothing but mark-up to define this little "program'. We even defined a button. At the moment nothing happens when the button is clicked. This is of course all good and well, but what if we want our users to be able to interact with the interface? The next thing we will do is to add a click event to the button.
 
@@ -54,7 +54,7 @@ def:Language="C#"
 
 Even though the above mark-up is valid, directly running the file will result in an exception being thrown by Avalon's xaml parser. "To use event handlers you will need to compile your xaml file using ac." This is where the Avalon Compiler comes into play.
 
-![](/images/xaml-events-crop.png)
+![](xaml-events-crop.png)
 
 #### Compiling mark-up
 
@@ -65,7 +65,7 @@ The Avalon Compiler is a powerful tool that let's compile mark-up to code or a 
 
 An example ac session, compiling the example.xaml file.
 
-![](/images/ac-session.png)
+![](ac-session.png)
 
 The compiler will spit out a couple of different files by default.
 
@@ -85,7 +85,7 @@ Alternatively, using one of the different switches ac supports, it's possible to
 
 Executing the exampleApp executable will open your Avalon application in a dedicated window. All event handlers are now properly working as expected.
 
-{{< figure src="/images/xaml-compiled.png" title="As expected, the event handler for the button now works. A click on the button will add the text 'Button click' to the text area." >}}
+{{< figure src="xaml-compiled.png" title="As expected, the event handler for the button now works. A click on the button will add the text 'Button click' to the text area." >}}
 
 We have now created our own simple Avalon application! The Avalon Compiler can also build more advanced applications. Complete Avalon projects can be created and compiled using _Longhorn Project_ files. We will explore the possibilities of these files in the next part of Hacking Avalon. Stay put!
 

@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-09-18T11:48:55+00:00
 url: /desktop-compositing
-featured_image: /images/aero-flip.png
+featured_image: aero-flip.png
 categories:
   - Research
   - Tutorials
@@ -40,7 +40,7 @@ Even when the hardware supports the above points the driver may limit these feat
 
 Your virtual machine will need to be off to change this setting. Go to the settings of the machine and under Display check the box to accelerate 3D graphics.
 
-![](/images/vmware-vm-settings.png)
+![](vmware-vm-settings.png)
 
 <!--This information is over-simplified. I'll try to re-write this part to make it more clear why a compositing window manager is so unique.-->
 
@@ -62,7 +62,7 @@ Move the slider completely to the right (Full). This enables full hardware accel
 
 If you followed above steps correctly (and the display driver supports it) and Longhorn plays along nicely you should now have support for DirectDraw and Direct3D. Whether these two features are supported and enabled can be checked in the DirectX diagnostic tool. Open Run (Win + R) and type `dxdiag`. On the Display tab you will find the current status of all DirectX features. It should look something like below:
 
-![](/images/dxdiag-dialog-4074.png)
+![](dxdiag-dialog-4074.png)
 
 Note that both DirectDraw and Direct3D are supported and enabled using the Vmware .5.2 display driver (SVGA II 11.06). The Notes section will show detailed descriptions whenever there are problems with the current driver.
 
@@ -79,7 +79,7 @@ The abbreviations DCE and DWM can be used interchangeably. In the early days of 
 Interesting to note is that the patent application for the desktop compositor mentions neither DCE nor DWM to describe the compositing engine. Instead the abbreviation CDWM (Compositing Desktop Window Manager) is used to describe the engine.
 
 ### 3683
-{{< figure src="/images/3683-dce.png" title="3683 DCE running on real hardware" >}}
+{{< figure src="3683-dce.png" title="3683 DCE running on real hardware" >}}
 
 **VMware version:** N/A: Only seems to work on real hardware
 
@@ -106,7 +106,7 @@ Windows Registry Editor Version 5.00
 ```
 
 ### 3706, 3713, 3718 and 4001
-{{< figure src="/images/4001-dce-effect.png" title="A window twirls around the screen in build 4001 as it closes" >}}
+{{< figure src="4001-dce.png" title="A window twirls around the screen in build 4001 as it closes" >}}
 
 **VMware version:** 6.5.x
 
@@ -115,7 +115,7 @@ Windows Registry Editor Version 5.00
 All these builds have similar DCE effects which can easily be enabled via a button in the user interface. In Display Properties click Advanced. Next, select Allow dynamic controls, apply and click "Enabled now'. Not only do these four builds have an alpha transparency effect on each window, but they also include new animations for minimizing and closing. These build's DCE requires a VMware version in the 6.5 range.
 
 ### 4011 and 4015
-{{< figure src="/images/4011-2014-12-27-21-50-47.png" title="DCE in build 4011" >}}
+{{< figure src="4011-dce.png" title="DCE in build 4011" >}}
 
 **VMware version:** 6.5.x
 
@@ -130,7 +130,7 @@ rundll32 uxdesk.dll,DCEStop
 Unlike earlier builds, DCE in these only adds alpha-transparency and no minimize/close animations.
 
 ### 4033, 4039 & 4042
-{{< figure src="/images/4039-dwm.png" title="DCE enabled on 4039" >}}
+{{< figure src="4039-dwm.png" title="DCE enabled on 4039" >}}
 
 **VMware version:** 6.5.x, 7.1.x, 10
 
@@ -145,7 +145,7 @@ C:\Windows\i386\sbctl stop
 In most cases a restart of explorer is required to make the task- and sidebar visible again. Build 4033 has a bug in DCE which causes it to automatically fall-back to CPU processing instead of hardware processing. Therefore, running DCE in this build will not unlock the special borders. By default builds 4039 and 4042 have an opaque theme. You can, however, perform the trick [described here](/4039-tips-tricks) to enable Aero glass.
 
 ### 4066
-{{< figure src="/images/4066-dwm.png" title="DWM on 4066, resulting in some blurry green borders." >}}
+{{< figure src="4066-dwm.png" title="DWM on 4066, resulting in some blurry green borders." >}}
 
 **VMware version:** 6.5.x, 7.1.x, 10
 
@@ -161,7 +161,7 @@ This build uses the green placeholder theme by default, a patched desksrv by FZa
 [Patched Desksrv for 4066](/download/patched-desksrv-for-4066.zip)
 
 ### 4074
-{{< figure src="/images/40474-dwm.png" title="DWM on 4074 with a DWM theme enabled." >}}
+{{< figure src="4074-dwm.png" title="DWM on 4074 with a DWM theme enabled." >}}
 
 **VMware version:** 6.5.x, 7.1.x
 

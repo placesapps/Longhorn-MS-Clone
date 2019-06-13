@@ -4,14 +4,13 @@ author: Melcher
 type: post
 date: 2015-04-17T15:19:42+00:00
 url: /vbl
+featured_image: null
 categories:
   - Development
   - Research
 
 ---
 Ever looked at a Windows build list and wondered what all those different tags mean? Or did you ever wonder about the production process of Windows? If yes, you've just clicked the correct article. This article will elaborate on the Windows build process as used during the pre-reset Longhorn development. Please note that even though I've conducted rigorous research, not all information in this article may be accurate.
-
-&nbsp;
 
 #### Virtual teams
 
@@ -38,25 +37,19 @@ The source tree at Microsoft is managed in a way that can be best explained as S
 
 As said before, each lab has a complete copy of the Windows source code. A enlisted developer could reach the code by browsing to this desitnation of the source depot: `\\depot\private\Lab0X_DEV\[project name]\\[dev name].` Here X is the number of the lab. Work in a lab is split into multiple projects to which developers are assigned. These projects come with different files on the source depot server and often also have their own sub-branches inside the lab. For example, `private/Lab06_demo` might be a special sub-branch in Lab06. The branch for developers to test their own code changes in is `private/Lab0X_dev([dev name])`.  Note that, even though it is mandatory, Lab03 never included the "private/" part in any of their branches.
 
-&nbsp;
-
 #### Private building, checked & checking
 
 As you might have noticed there's something private going on in those branches and the source depot. This has nothing to do with privacy or so, but it's about building private binaries. Every developer can choose to check-out source files from one of the enlisted branches. These files will be synced to the machine the developer is enlisted to. Typically, a developer would work on the source of the checked-out files and when ready, compile these files to test them.
 
 Private in this context more or less means that the source code for the files was changed by a developers and is different from the source found in the source depot: the changes made are not publicly available. Privately built builds are commonly of the "checked" flavour. After testing the privately build files, the private source will have to be merged with the current source in the source depot (note that the source might have been changed over time and potential merge conflicts have to be resolved). After another successful test, the source is now ready to be checked-in into the project branch's source code. Each project would again Forward-Integrate (FI) its changes into the top-level lab. Once a feature was FI'd into the top-level lab the probability of it being included when FI'ing the lab's source into the main branch  was very high.
 
-&nbsp;
-
 #### _More:_ Checked builds
 
 Checked builds are build that have certain debug info pre-installed and still contain debug assertions. Checked builds are not suited for normal consumer usage since they run slower than their "free" counterparts and handle errors in a different way. Checked builds can be easily made out from their image name which will include CHK instead of FRE.
 
-&nbsp;
-
 #### Syncing up
 
-![](/images/development-diagram.png)
+![](development-diagram.png)
 
 At some point all changes checked-in into a lab by its developers will have to synced with all other labs. The process of doing this is called reverse-integration (RI). A few weeks before a planned RI, a lab will typically "snap". Snapping means that all developers need to check-in their code and no newly written code is accepted. Special branches for snapping are available such as `snap_dev_ux`  for Lab06. After the snapping deadline work will begin on creating a build with as many bugs resolved as possible . This build is sometimes called an RI-candidate. When RI'ing, the lab's source code is merged with the so called main branch. The main branch is supposed to always have a stable version of the source with as few bugs as possible.  The rule of thumb is that the only builds that ever go external are builds from the main branch (or branched off of it). After testing the main build, the source is then forward-integrated into all other labs again, so everylab is on the same page.
 
@@ -64,7 +57,7 @@ A full synchronisation of a lab could take as long as one complete milestone. Be
 
 #### N-labs
 
-![](/images/development-diagram-\_n.png)
+![](development-diagram-\_n.png)
 
 Most labs, if not all have a "\_n" counterpart. The function of these labs is to act like a buffer between the top-level lab and the main branch. Because in some labs so much new features were RI'd into the top-level lab so fast by the sub-branches it became impossible to timely test how all these features behaved when added together. The goal of the n-lab was to slowly add features and thus merge all changes from the top-level lab with the changes FI'd from the main branch and the other way round. A \_n lab would make more code flow possible between the top-level lab and main branch, but still a full code synchronisation of the toplevel-lab and the main branch would only happen approximately once every milestone.
 

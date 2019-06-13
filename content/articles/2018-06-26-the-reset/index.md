@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2018-06-26T22:25:14+00:00
 url: /the-reset
-featured_image: /images/4042-2014-11-17-14-34-01.png
+featured_image: 4042-2014-11-17-14-34-01.png
 categories:
   - Development
   - Research

@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2017-05-14T14:09:12+00:00
 url: /revisiting-the-online-photo-print-wizard
-featured_image: /images/4042-2017-05-14-13-53-05.png
+featured_image: 4042-2017-05-14-13-53-05.png
 categories:
   - Feature review
   - Tutorials
@@ -14,17 +14,7 @@ In this post I will have a look at how one can unlock the "full potential' of th
 
 The Online Photo Print Wizard, called `ophotowz` internally, is a wizard to allow sending photos to an online service for printing. It uses the typical "basket' selection interface also seen in other aero wizards. It's known to be available in build 4039, 4042, 4051 and 4053. The wizard should be launchable via the tasks in explorer shown while in the Photos and Videos library. Clicking _Order Prints Online_ will open the wizard. Do note that these tasks may not always show up (tasks need running WinFS and WinFPM services to propagate to the preview panel).
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/ophotowiz1.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/ophotowiz2.png)
-</div>
-</div>
+{{< gallery 50 "ophotowiz1.png" "ophotowiz2.png" >}}
 
 In case the _Order Prints Online_ task do not show you can always launch the wizard manually using the snippet below. Be sure to add a reference to  `ophotowz.dll` from the WinSxS folder.
 
@@ -47,7 +37,7 @@ Windows Registry Editor Version 5.00
 
 Restarting the wizard after applying above registry key will show a different page.
 
-![](/images/ophotowizM6Enabled.png)
+![](ophotowizM6Enabled.png)
 
 Clicking next will now yield an error. The wizard tries to download a file from an internal Microsoft server which is long gone - and obviously wouldn't be available from your network whatsoever. Specifically the file _usa.xml_ is requested from `http://wmisintwebsvc01:1704/testopw/`. In collaboration with JaGoTu, I was able to reconstruct the lay-out of the XML file.
 
@@ -84,43 +74,7 @@ Now, to check if your mapping works, issue a ping command to `wmisintwebsvc01`.
 
 Now we're ready to run the wizard again. The images below show the workflow: pick a provider, log-in with your provider, pick images. As said before, the basket principle is used here to select images. Simpy browse the file system and drag images to the basket on the right to eventually print them. Note that when there are any images in your basket, the wizard will crash.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/ophotowiz-providers-2.png)
-</div>
-<div class="ma2 ml0">
-
-![](/images/4042-2017-05-14-13-52-14.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4042-2017-05-14-13-52-22.png)
-</div>
-</div>
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/4042-2017-05-14-13-52-51.png)
-</div>
-<div class="ma2 ml0">
-
-![](/images/4042-2017-05-14-13-53-05.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4042-2017-05-14-14-18-48.png)
-</div>
-</div>
-<div class="flex">
-<div class="ma2 ml0 w-third">
-<div></div>
-
-![](/images/4042-2017-05-14-14-18-52.png)
-</div>
-</div>
+{{< gallery third "ophotowiz-providers-2.png" "4042-2017-05-14-13-52-14.png" "4042-2017-05-14-13-52-22.png" "4042-2017-05-14-13-52-51.png" "4042-2017-05-14-13-53-05.png" "4042-2017-05-14-14-18-48.png" "4042-2017-05-14-14-18-52.png" >}}
 
 A few years back I made a video showing how to open the Online Photo Print wizard. Here is the vid in case you missed it:
 

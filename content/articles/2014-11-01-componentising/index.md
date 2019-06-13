@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2014-11-01T14:35:28+00:00
 url: /componentising
-featured_image: /images/targetdesigner.png
+featured_image: targetdesigner.png
 categories:
   - Development
   - Research
@@ -20,7 +20,7 @@ Due to Windows being split into components, it's fairly easy to specify which fe
 
 As with XP Embedded a piece of software was provided that would make it possible to add and remove components to a new or existing Longhorn OS images and change properties of components. This software is referred to as Target Designer or Windows Component Studio. A version of this software can also be found in build 4083, 4084 and 4093. Due to a missing dll the application is not fully loaded, but the main window will show. The image below was obtained from a WinHEC 2004 presentation describing the Longhorn build process.
 
-![](/images/targetdesigner.png)
+![](targetdesigner.png)
 
 [Fixed Target Designer for 4084](/download/fixed-target-designer-for-4084.zip)
 

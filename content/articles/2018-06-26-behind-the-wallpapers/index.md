@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2018-06-26T22:17:33+00:00
 url: /behind-the-wallpapers
-featured_image: /images/ws_Vista_grass_1600x1200.jpg
+featured_image: ws_Vista_grass_1600x1200.jpg
 categories:
   - Research
 
@@ -23,6 +23,4 @@ So know you know who but all those hay bails in the Longhorn alphas 😉 It's ki
 
 That's it for this time. See ya.
 
-![](/images/ws_Vista_grass_1600x1200.jpg)
-
-![](/images/Longhorn_Alpha_Bliss.jpg)
+{{< gallery 50 "ws_Vista_grass_1600x1200.jpg" "Longhorn_Alpha_Bliss.jpg" >}}

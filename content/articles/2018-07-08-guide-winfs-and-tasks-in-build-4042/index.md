@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2018-07-08T15:23:15+00:00
 url: /guide-winfs-and-tasks-in-build-4042
-featured_image: /images/4042-2017-05-13-13-00-16.png
+featured_image: 4042-2017-05-13-13-00-16.png
 categories:
   - 'Tips &amp; tricks'
   - Tutorials
@@ -12,7 +12,7 @@ categories:
 ---
 A big new thing in Longhorn were the tasks and help topics integrated into Explorer. Many builds show an empty space where these tasks would go in Explorer's task pane, but no tasks are showing. In this post I'll describe a the step-by-step process of getting these tasks to work on build 4042. The idea is that we go from an empty pane to a nice and completely filled pane like in the image below.
 
-![](/images/4042-2017-05-13-13-00-16.png)
+![](4042-2017-05-13-13-00-16.png)
 
 ### Tasks, help topics and their file format
 
@@ -26,11 +26,11 @@ Explorer expects to find tasks stored in the WinFS environment. Therefore we nee
 
 Initially, trying to start the service will yield an error:
 
-![](/images/4042-2017-05-13-21-10-04-1.png)
+![](4042-2017-05-13-21-10-04-1.png)
 
 Now, locate the `Windows File System` Service and restart it and all its sub-services
 
-![](/images/4042-2017-05-13-21-10-19-1.png)
+![](4042-2017-05-13-21-10-19-1.png)
 
 Now navigate to `C:\Windows\System32\WinFS\log` and open `errorlog` and `FPMErrorLog`. Both files should have some logging information and no errors. A successful initialization of the WinFS database looks something like this:
 
@@ -60,11 +60,11 @@ Now navigate to `C:\Windows\System32\WinFS\log` and open `errorlog` and `FPMErro
 
 As soon as the Windows File Promotion Manager service starts `FPMErrorLog` will contain logging info. As soon as WinFPM starts WinFS will start the `WinFS_Catalog` database and a `Store` database. The WinFPM service will install any pending schemas. To check whether all shared folders were created correctly, pop open `compmgmt.msc` and browse to Shared Folders. You should see a `SQL_{UUID}` share. This shared folder holds information about the filestream which allows the actual WinFS SQL database to save files on the local disk (instead of saving byte blobs in the database).  Read more about [FILESTREAMs in Transact-SQL here](https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-2017).
 
-![](/images/4042-2018-07-08-16-52-51.png)
+![](4042-2018-07-08-16-52-51.png)
 
 As you can see, a System Catalog Store and a System Default Store have been created along with the FILESTREAM Container Share. The DefaultStore is the "entry points" for WinFS in which you can dump your files. This folder, however, is still completely invisible in the shell at this points. You should now locate the `NS$ShellSubscriptions` service and start it - it should start without any problems now. If you experience any problems I bet you haven't waited long enough to let WinFS completely initialize. Since the Shell subscriptions service is now active (e.g. the shell responds to WinFS database events and vice versa), the shell will start to display some new items. One of which is the DefaultStore shared folder in Computer. Dragging folders and files into this folder will hand them off to the File Promotion Manager which will eventually include them into the WinFS database.
 
-![](/images/4042-2018-07-08-16-57-10.png)
+![](4042-2018-07-08-16-57-10.png)
 
 Eventually all files in the DefaultStore show up in the right shell folder (e.g. image files in Photos and Videos etc.). Note that double-clicking the item will do nothing. If you are eager to see the contents of the folder; right-click and choose Explore.
 
@@ -72,16 +72,6 @@ Eventually all files in the DefaultStore show up in the right shell folder (e.g.
 
 If you paid close attention, you might have notices that shell tasks have populated the task pane in the meantime. If you lack patience - like I do - you can force this update by executing the Natural UI Metadata Promotion Manager (NuiMPMPx.exe located in Sytem32) this will create a PromotionManager that relies on the WinFPM manager to execute stored procedures in tables Help (PromoteMetaData), ShellTask (PromoteTaskAssembly) and NaturalUI (AddAnnotationAssociation). You should end up with something like below. Opening Help & Support will now also show help topics. Double-clicking an item will open up a help pane to show detailed steps.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/4042-2018-07-08-17-04-21.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4042-2018-07-08-17-22-51.png)
-</div>
-</div>
+{{< gallery 50 "4042-2018-07-08-17-04-21.png" "4042-2018-07-08-17-22-51.png" >}}
 
 That's it for this time&#8230;

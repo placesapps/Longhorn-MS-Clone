@@ -5,14 +5,14 @@ type: post
 date: 2016-01-28T14:25:46+00:00
 draft: true
 url: /?p=1369
-featured_image: /images/Windows-Code-Name-Longhorn-4074-2016-01-23-16-44-00.png
+featured_image: vm.png
 categories:
   - Special Download
 
 ---
 For your convenience, I uploaded a pre-configured Longhorn VM for you to download!
 
-![](/images/Windows-Code-Name-Longhorn-4074-2016-01-23-16-44-00.png)
+![](vm.png)
 
 The VM contains a vanilla 4074 installation with the following bits changed:
 

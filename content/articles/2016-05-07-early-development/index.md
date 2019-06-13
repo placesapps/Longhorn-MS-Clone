@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-05-07T15:00:57+00:00
 url: /early-development
-featured_image: /images/detailed-timeline.png
+featured_image: timeline.svg
 categories:
   - Development
 
@@ -23,7 +23,7 @@ Note that release branches can be seen as trunks on their own as well. Long last
 
 The figure below shows an overview of the _main_ trunk and release branches from 2001-2004.
 
-![Windows trunk](/images/windows-trunk.svg)
+![Windows trunk](windows-trunk.svg)
 
 Be sure to check out [WinSuperSite](http://winsupersite.com/windows-server/windows-server-2003-road-gold-part-two-developing-windows) to read more about trunk based development.
 
@@ -34,23 +34,21 @@ To create a better understanding of how Longhorn precisely emerged from the Whis
 In 2001, somewhere between 17 and 23 July the main branch was forked to the _xpclient_ release branch. This branch was dedicated to the Windows client, Whistler - which eventually became XP. The main branch continued to compile the server counterpart of Windows. To avoid confusion between client and server, the build number for the main branch was incremented with 1000. As of that moment the main branch began compiling builds in the 3000-range.
 
 
-![](/images/detailed-timeline.png)
+![](timeline.svg)
 
-[Download as SVG](/images/timeline.svg)
+The first Longhorn build confirmed to exist is [3663](/builds/3663) compiled by [_lab06\_n_](/builds/branch/lab06/lab06_n). There are, however, indications that Longhorn builds were already being compiled as early as 2001.
 
-The first Longhorn build confirmed to exist is [3663](/builds/3663) compiled by [_lab06_n_](/builds/branch/lab06/lab06_n). There are, however, indications that Longhorn builds were already being compiled as early as 2001.
-
-Exhibits from the Microsoft v.s. Comes case give a unique insight in some of the earliest development and planning of Longhorn. According to document _[PX06977](/images/PX06977.pdf)_, planning for Longhorn was supposed to start in either July or August 2001. The passage below originates from internal Microsoft correspondence dating back to December 2001.
+Exhibits from the Microsoft v.s. Comes case give a unique insight in some of the earliest development and planning of Longhorn. According to document _[PX06977](PX06977.pdf)_, planning for Longhorn was supposed to start in either July or August 2001. The passage below originates from internal Microsoft correspondence dating back to December 2001.
 
 > Introducing the ability to search for files into the places where people need it. An obvious example of this is the File Open dialog. **This is implemented today in longhorn but there’s no UI**. Our team could help with the UI/code needed to make this accessible (&#8230;)
 
-> _Anti-trust case document [PX08378](/images/PX08378.pdf)_
+> _Anti-trust case document [PX08378](PX08378.pdf)_
 
 To put this into perspective, if Longhorn builds were indeed already compiling in December 2001, it's very likely for Longhorn builds in the 3500-range to be in existence. Steven Sinofsky also briefly mentions Longhorn in a mail dating 6 February 2002. This substantiates the existence of Longhorn builds way before the earliest known build at this time, 3663.
 
 > (&#8230;) it is worth noting that even without this work it had been becoming clear that the server was stretching. This was causing pressure on WinXP SP1, which was expanding in scope (meaning it would take more and more of testing to get it done, **which means they would not be testing Longhorn.**)
 
-> _Anti-trust case document [PX07069](/images/PX07069.pdf)_
+> _Anti-trust case document [PX07069](PX07069.pdf)_
 
 #### Where it all started
 

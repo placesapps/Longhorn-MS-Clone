@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-08-12T19:40:50+00:00
 url: /3683-tips-tricks
-featured_image: /images/3683.png
+featured_image: 3683.png
 categories:
   - 'Tips &amp; tricks'
 
@@ -19,45 +19,25 @@ WinFS, in contrast to later builds, indexes the complete root drive of the compu
 
 Even though this feature was already available through another tool -_msconfig_ - this is a more user friendly way of presenting applications that automatically start with Windows. This tab is found in Performance settings in System Properties.
 
-![](/images/StartUp-Application-Monitor.png)
+![](StartUp-Application-Monitor.png)
 
 ### Albums & playlists
 
 It is possible to create collections of pictures or songs by creating an album or playlist respectively. After creation the album/playlist is rather useless. Opening a created album will result in the playlist dialog appearing, showing your pictures as songs. There is no possibility to actually play songs from a created playlist.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/CreateEditPlaylist.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/CreateEditAlbum.png)
-</div>
-</div>
+{{< gallery 50 "CreateEditPlaylist.png" "CreateEditAlbum.png" >}}
 
 ### Ratings
 
 Music files in a virtual folder can be rated 0 trough 5 stars.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/MusicRating.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/MusicRating2.png)
-</div>
-</div>
+{{< gallery 50 "MusicRating.png" "MusicRating2.png" >}}
 
 ### New buttons in toolbar
 
 A couple of new buttons can be found in this build that can be added to the toolbar.
 
-![](/images/3683-toolbar.png)
+![](3683-toolbar.png)
 
 From left to right you see the following options:
 
@@ -77,17 +57,7 @@ Lists various sorting modes for the current folder supported and driven by WinF
 
 A restyled version of the open file dialog is present. The new dialog presents some newly implemented explorer features to the user such as pivots and zooming.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/3683-save-dialog.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/NewVSOld.png)
-</div>
-</div>
+{{< gallery 50 "3683-save-dialog.png" "NewVSOld.png" >}}
 
 ### File copy resolver
 
@@ -100,13 +70,13 @@ Windows Registry Editor Version 5.00
 "NewResolve"=dword:00000001
 ```
 
-![](/images/3683-copy-resolver.png)
+![](3683-copy-resolver.png)
 
 ### Briefcase introduction
 
 A detailed introduction dialog was added for working with briefcases. This little dialog can be invoked by running `rundll32 syncui.dll,Briefcase_IntroW`
 
-![](/images/3683-briefcase-intro.png)
+![](3683-briefcase-intro.png)
 
 ### Branding API
 
@@ -124,7 +94,7 @@ The binary value 1111111 (that's 127 in decimal) will yield the complete brandin
 
 The application below uses P/Invoke to call the new function with decimals as argument.
 
-![](/images/3683-getosproductname.png)
+![](3683-getosproductname.png)
 
 This application is available on GitHub right [here](https://github.com/longhornms/GetOSProductName-3683)
 
@@ -136,18 +106,7 @@ In preparation for a Game explorer, the _Game Definition File_ (GDF) format wa
 
 Although incomplete and mostly unusable, the GDF file type itself is picked-up by explorer.
 
-
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/3683-gdf-details.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/3683-gdf-options.png)
-</div>
-</div>
+{{< gallery 50 "3683-gdf-details.png" "3683-gdf-options.png" >}}
 
 Download your own copy of our little "game" here.
 
@@ -157,6 +116,6 @@ Download your own copy of our little "game" here.
 
 Although very buggy, this build too sports the new desktop compositing engine. So far I have only been able to get this working on real hardware - it simply refuses to start in any VM configuration. Upon enabling DCE the desktop wallpaper disappeared.
 
-![](/images/3683-dce.png)
+![](3683-dce.png)
 
 #### Thanks to JaGoTu for (re)discovering some neat features in this build.

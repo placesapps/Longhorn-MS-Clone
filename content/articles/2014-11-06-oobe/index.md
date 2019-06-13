@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2014-11-06T13:06:36+00:00
 url: /oobe
-featured_image: /images/1.png
+featured_image: 1.png
 categories:
   - Research
 
@@ -17,28 +17,7 @@ After a brief time loading at the "Please wait&#8230;' page you will find yourse
 
 The four pages of the wizard in build 4001.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/1.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/2.png)
-</div>
-</div>
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/3.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4.png)
-</div>
-</div>
+{{< gallery 25 "1.png" "2.png" "3.png" "4.png" >}}
 
 After installation the files can be found in the `C:\Windows\System32\oobe\` directory. In most builds this folder also still contains the XP-style OOBE wizard in html. The new oobe wizard is composed of the following files:
 
@@ -64,17 +43,7 @@ After installation the files can be found in the `C:\Windows\System32\oobe\` dir
 
 All builds except 4084 and 4093 (and x64 builds) have an OOBE wizard consisting of above files. It is interesting to note that setup.exe in 4001 and 4011 contains a green version of the background found in the oobe folder. I replaced the original blue background with the green one, see the images below for an impression. As of build 4051, setup.exe contains a Slate style background.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/green2.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/green1.png)
-</div>
-</div>
+{{< gallery 25 "green2.png" "green1.png" >}}
 
 OEM configurability was also introduced in build 4051. At start of the wizard, oobeui will always check for the OEMUI.xml configuration file. Via this config file OEMs would have been able to add and/or replace pages in the wizard. Extra pages were to be loaded from another assembly (specified in the config file) using System.Reflection. Using the code in oobeui hounsell re-created the lay-out of such a config file.
 
@@ -107,20 +76,6 @@ OEM configurability was also introduced in build 4051. At start of the wizard, o
 
 The ooberes and ooberesl contain more pages than shown during the actual wizard. The extra pages _netdetectpage_ and _networkpage_ are present, but no code for these pages can be found in oobeui.dll. In later builds another page hidden page can be found, called _registrationpage_.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/6.png)
-</div>
-<div class="ma2 ml0">
-
-![](/images/5.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/7.png)
-</div>
-</div>
+{{< gallery 25 "5.png" "6.png" "7.png" >}}
 
 ##### Special thanks to Ultrawindows

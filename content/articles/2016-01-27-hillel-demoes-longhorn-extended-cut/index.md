@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-01-27T08:37:16+00:00
 url: /hillel-demoes-longhorn-extended-cut
-featured_image: /images/hilleldemopdc.png
+featured_image: hilleldemopdc.png
 categories:
   - Concept spotlight
 

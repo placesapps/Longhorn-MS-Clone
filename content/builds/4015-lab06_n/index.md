@@ -18,6 +18,6 @@ Only one screenshot of this build is known to exist, it was extracted from a Mic
 ### Video
 
 <video width="100%" preload="metadata" controls="controls">
-  <source type="video/mp4" src="/images/4015-lab06-footage.mp4" />
-  <a href="/images/4015-lab06-footage.mp4">Download video</a>
+  <source type="video/mp4" src="4015-lab06-footage.mp4" />
+  <a href="4015-lab06-footage.mp4">Download video</a>
 </video>

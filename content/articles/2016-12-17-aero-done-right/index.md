@@ -4,14 +4,7 @@ author: Melcher
 type: post
 date: 2016-12-17T13:49:43+00:00
 url: /aero-done-right
-featured_image: /images/Windows-Code-Name-Longhorn-4074-2016-01-23-14-22-15.png
-enclosure:
-  - |
-    |
-        https://longhorn.ms/images/pdc2003_aero_3d_effects.mp4
-        1737008
-        video/mp4
-        
+featured_image: 4074-dwm-jade.png
 categories:
   - Feature review
   - Tutorials
@@ -25,7 +18,7 @@ During the development of Longhorn the exact look of the Aero theme was kept a g
 
 According to internal documentation, personal authorization by Scott Hanggie was required to get access to the Aero theme files. Scott is also one of the patent holders for the _Compositing Desktop Window Manager_. The screenshot below is part of that very patent filing. The image shows some of Aero's most notable features: aurora in the preview panel and transparent borders - features that were, at the time, still highly confidential.
 
-{{< figure src="/images/aero-pat.png" title="Note that only the border is transparent. Probably, MILExplorer has not been set in the registry." >}}
+{{< figure src="aero-pat.png" title="Note that only the border is transparent. Probably, MILExplorer has not been set in the registry." >}}
 
 Although there is no way to tell when this screenshot was taken and on which build, I tend to think it was taken on one of the many 4050 [lab06_demo](/builds/branch/lab06/lab06_demo) builds compiled during 2003 leading up to the [PDC 2003 demo build](/builds/4050-pdc). By default the build from the lab06_demo branch had an appearance similar (if not identical) to the publicly released build at PDC 2003, [4051](/builds/4051). In contrast to the public build these builds, however, did have full support for Aero. The sad news that the public build would not yet feature Aero was brought by [Paul Thurrott](http://web.archive.org/web/20060310222543/http://www.windowsitpro.com/Articles/Index.cfm?ArticleID=40367%26DisplayTab=Article "Windows IT Pro - Exclusive: PDC Attendees to Get Aero Demo Only") in September:
 
@@ -33,9 +26,9 @@ Although there is no way to tell when this screenshot was taken and on which bui
 
 Not only was Aero missing, but the complete DWM system was crippled. Even ordinary Microsoft employees couldn't get their hands on all the shiny Aero stuff. Instead, developers were to use the placeholder _Jade_ theme. This theme had a far less attractive silvery finish and borders weren't transparent, but instead an ugly greenish color. This short video snippet taken during PDC 2003 by Paul Thurrott and Keith Furman makes apparent that Aero just wasn't for everyone yet.
 
-<video width="320" height="240" preload="metadata" controls="controls">
-  <source type="video/mp4" src="/images/pdc2003_aero_3d_effects.mp4" />
-  <a href="/images/pdc2003_aero_3d_effects.mp4">Download video</a>
+<video width="100%" preload="metadata" controls="controls">
+  <source type="video/mp4" src="pdc2003_aero_3d_effects.mp4" />
+  <a href="pdc2003_aero_3d_effects.mp4">Download video</a>
 </video>
 
 When build 4074 was given to attendees of the WinHEC 2004 event people immediately started wondering whether Aero was present in this build as well. In a webcast , highlighting the progress made in build 4074 technical evangelist [Dave Massy said](https://blogs.msdn.microsoft.com/tims/2004/05/08/longhorn-winhec-build-whats-new/ "Tim Sneath, MSDN Blogs - Longhorn WinHEC Build: What's New?"):
@@ -93,4 +86,4 @@ tskill explorer
 
 If everything went corrent you should end up with something like the picture below. Note that the screenshot also shows the Animated Aurora Preview Pane. More information on how to patch the theme can be found in [another post](/aurora-aero#fix). You might have also noticed that the borders on all windows are still actually opaque and not the Aero translucent kind. Unfortunately, the original resources are not available in any build. There are, however, a few very good patched theme files with transparency available on the internet as well as a build of 4074 (TWIWMTB) that has a pre-patched theme file.
 
-{{< figure src="/images/Windows-Code-Name-Longhorn-4074-2016-01-23-16-44-00.png" title="Aero taskbar and sidebar show up when using an altered version of the Jade theme" >}}
+{{< figure src="4074-dwm-jade.png" title="Aero taskbar and sidebar show up when using an altered version of the Jade theme" >}}

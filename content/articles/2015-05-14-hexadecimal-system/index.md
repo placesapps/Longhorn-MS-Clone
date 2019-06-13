@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2015-05-14T14:07:38+00:00
 url: /hexadecimal-system
-featured_image: /images/hex-field.png
+featured_image: hex-field.png
 categories:
   - Research
 
@@ -72,7 +72,7 @@ To be able to find certain parts of data in a file some notion of offsets is req
 
 The hex editor below shows a selection made in a PE header starting in at offset 0x4E with a length of 0x26 bytes. The block selected reaches from offset 0x4E to 0x73. The offset of the next value after the selection (value 2E) is 0x74.
 
-![](/images/HexEditor.png)
+![](HexEditor.png)
 
 As seen in the image above, hexadecimal values are represented as ANSI encoded characters in a separate column next to the data. When values represent plain text it can immediately be read.
 

@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-01-11T10:39:45+00:00
 url: /exposing-a-spy
-featured_image: /images/phodeo-top.png
+featured_image: phodeo-top.png
 categories:
   - Research
 
@@ -23,28 +23,18 @@ Besides the hidden views mentioned above, a third view can be enabled: `LVSpy`. 
 
 Enabling LVSpy will enable an additional view mode in the views menu. Notice the label of the extra item in the menu "Listview Spy".
 
-![4066 view context menu](/images/4066-view-context-menu.png)
+![4066 view context menu](4066-view-context-menu.png)
 
 Listview is the name used to describe the panel that showing you all your files and folders. It seems that Listview Spy is not a regular view-mode, but some sort of developer tool giving insight in the current camera position of the listview. For a long time I've been wondering what valuable information is captured in the listview worth spying for.
 
 The LVSpy dialog only opens when either the MIL or 3D view was selected first. After opening the dialog it cannot be closed. The only way to close the window is closing the explorer window it belongs to. Opening LVSpy when no Direct 3D capable driver is installed is pretty useless and will result in all sliders set to their default position (like in the image below). This behavior can be explained by the fact that, because of the lack of DirectX support, explorer won't attempt to draw the 3D viewing mode. Therefore no viewbox is available to read X, Y and Z values from.
 
-![4066 explorer spy](/images/4066-explorer-spy.png)
+![4066 explorer spy](4066-explorer-spy.png)
 
 When DirectX support is available LVSpy shows the current values of the viewbox. These values directly depend on the size of the window itself.
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/4066-lvspy-size2.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/4066-lvspy-size1.png)
-</div>
-</div>
+{{< gallery 50 "4066-lvspy-size2.png" "4066-lvspy-size1.png" >}}
 
 Contrary to what I first thought, the sliders are not meant to be adjusted. Changing the sliders will not change the viewbox co-ordinates. So, that's it. Listview Spy is a dialog that let's one check the current co-ordinates of the DirectX rendered 3D view. This was probably used as a quick debugging tool to quickly check the behavior of the newly introduced views.
 
-Thanks to [yourepic failure](https://www.betaarchive.com/forum/viewtopic.php?f=62&t=36131 "BetaArchive Longhorn 4066 ListviewSpy").
+Thanks to [yourepicfailure](https://www.betaarchive.com/forum/viewtopic.php?f=62&t=36131 "BetaArchive Longhorn 4066 ListviewSpy").

@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-03-14T22:01:47+00:00
 url: /disable-avalon
-featured_image: /images/hackingavalon.png
+featured_image: hackingavalon.png
 categories:
   - Hacking Avalon
 
@@ -19,6 +19,6 @@ The second approach will restore the classic task pane as seen in Windows XP. On
 
 Next, remove the GUID from the (Default) entry. This GUID tells explorer where to look for the Shell View provider which would normally be initialized via COM. Without this information explorer falls back to the older view. Note that while Avalon is disabled explorer will still happily display WinFS pivots in the task pane.
 
-{{< figure src="/images/explorer_w_avalon.png" title="With Avalon" >}}
+{{< figure src="explorer_w_avalon.png" title="With Avalon" >}}
 
-{{< figure src="/images/explorer_wo_avalon.png" title="Without Avalon" >}}
+{{< figure src="explorer_wo_avalon.png" title="Without Avalon" >}}

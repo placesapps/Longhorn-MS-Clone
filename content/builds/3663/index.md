@@ -5,6 +5,7 @@ url: /builds/3663
 build_tag: "6.0.3663.0.Lab06_N.020728-1728"
 build_arch: [ "x86" ]
 build_m: 2
+featured_image: 3663-1.png
 ---
 
 This is the very first build of Longhorn of which screenshots exist. This build still looks a lot like Windows XP / Server 2003 as it is an extremely early build, though some changes to the UI were made.
@@ -18,7 +19,7 @@ A long-standing rumour suggested that Longhorn Build 3663 did leak at some point
 ### Gallery
 
 #### xBetas
-{{< gallery "xbeta1" "xbeta2" "xbeta3" "xbeta4" >}}
+{{< gallery 25 "xbeta1.jpg" "xbeta2.jpg" "xbeta3.jpg" "xbeta4.jpg" >}}
 
 #### Unverified
-{{< gallery "3663-1" "3663-2" "3663-3" "3663-4" "3663-5" >}}
+{{< gallery 20 "3663-1.png" "3663-2.png" "3663-3.png" "3663-4.png" "3663-5.png" >}}

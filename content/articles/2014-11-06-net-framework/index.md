@@ -4,6 +4,7 @@ author: Melcher
 type: post
 date: 2014-11-06T20:17:10+00:00
 url: /net-framework
+featured_image: null
 categories:
   - Research
 
@@ -45,7 +46,7 @@ Of course, the .NET application also has to be executed at some point. Executing
 
 Interpreting the abstract intermediate representation is done by two subsystems of the CLR. A loader reads the meta-data and based on that creates a layout of the application's classes and members in memory. The loader loads on-demand (only when a class is referenced). The Just-in-time compiler compiles CIL code based on what the loader reports back. CIL code gets compiled to native machine code and then executed. Note that no CIL code is actually executed. As with the loader, the JIT compiler also only compiles on-demand (only compiling when a class is called). A compiled method/class stays in memory as long as there is space available.
 
-![](/images/graph.png)
+![](graph.png)
 
 #### .NET framework and Java
 

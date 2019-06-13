@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-04-08T13:25:55+00:00
 url: /installing-avalon-nt
-featured_image: /images/avalon-on-xp.png
+featured_image: avalon-on-xp.png
 categories:
   - Hacking Avalon
 

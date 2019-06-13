@@ -1,10 +1,13 @@
 <div class="flex flex-wrap">
 {{ $resources := .Page.Resources }}
-{{ range .Params }}
-    {{ $original := $resources.GetMatch (printf "*%s*" (.)) }}
-    {{ $image := $original.Resize "x240" }}
-    <a href="{{ $original.RelPermalink }}" target="_blank" class="w-25 pa2">
-        <img src="{{ $image.RelPermalink }}" />
-    </a>
+{{ $width := .Get 0 }}
+{{ range after 1 .Params }}
+    {{ $original := $resources.GetMatch (printf "%s" (.)) }}
+    {{ if $original }}
+        {{ $image := $original.Fill "320x240 Center" }}
+        <a href="{{ $original.RelPermalink }}" target="_blank" class="w-{{ $width }}-ns w-100 pa2">
+            <img src="{{ $image.RelPermalink }}" />
+        </a>
+    {{ end }}
 {{ end }}
 </div>

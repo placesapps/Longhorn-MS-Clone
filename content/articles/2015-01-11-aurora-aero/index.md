@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2015-01-11T10:56:59+00:00
 url: /aurora-aero
-featured_image: /images/aurora-5219.png
+featured_image: aurora-5219.png
 categories:
   - Tutorials
 
@@ -15,7 +15,7 @@ But it did. The effect was found and applications were made to show what it wou
 
 #### A theme with two faces
 
-Part of the problem of aurora not working is that none of the default themes actually _supports_ aurora. Both Jade and Slate cannot draw the aurora on the preview panel. The only theme that is actually capable of drawing it is the Aero theme. I hear you think: "But there is no Aero theme installed by default". That's absolutely right, but really Jade IS the Aero theme in disguise. The Jade visual style file includes all resources for both Jade and Aero. During early Longhorn development the Aero theme was kept a good secret and remained off-limits even for most shell developers. To get access to the Aero msstyles file you needed permission from Scott Hanggie, who probably was in charge of the group developers implementing Aero. The Jade theme, however, was freely accessible and often used as a place holder for Aero. The Jade theme has far less attractive greenish borders when DWM is enabled in comparison with the fully transparent borders of the Aero theme.
+Part of the problem of aurora not working is that none of the default themes actually _supports_ aurora. Both Jade and Slate cannot draw the aurora on the preview panel. The only theme that is actually capable of drawing it is the Aero theme. I hear you think: "But there is no Aero theme installed by default". That's absolutely right, but really Jade IS the Aero theme in disguise. The Jade visual style file includes all resources for both Jade and Aero. During early Longhorn development the Aero theme was kept a good secret and remained off-limits even for most shell developers. To get access to the Aero msstyles file you needed permission from Scott Hanggie, who probably was in charge of the group developers implementing Aero. The Jade theme, however, was freely accessible and often used as a place holder for Aero. The Jade theme has far less attractive greenish borders when DWM is enabled in comparison with the fully transparent borders of the Aero theme.
 
 To convert Jade to Aero you need to rename the theme files and edit the .theme file. If you wish to do so, you can follow this quick tutorial (this has already been done for you in the TWIWMTB version of 4074).
 
@@ -39,13 +39,13 @@ Note that converting Jade to Aero will not enable the transparent Aero Glass the
 
 Since you just enabled the Aero theme, all internal checks for enabling aurora have been passed. Yet, there is still one thing preventing you from having the animated aurora in the preview panel. To understand this you will need to know that there is NO aurora in the explorer. The class that creates the aurora effect in explorer (System.Windows.Client.Shell.View.Aurora) does not have the aurora resources embedded. Instead it relies on an external memory stream coming from the theme file. This stream is then loaded as a BAML file and parsed to create the animation.
 
-![](/images/animated-preview-panel-aurora.png)
+![](animated-preview-panel-aurora.png)
 
 #### Broken {#fix}
 
 The original Jade theme files in both build 4066 and 4074 do indeed include a resource that serves as memory stream. Opposed to what I earlier thought, the files are actually valid BAML files and do produce an aurora effect when properly loaded. The major problem is that the BAML file uses an, at the time, already deprecated format incompatible with the system's default BAML parser. The screen below shows the original BAML file from 4066's Jade theme loaded by an older parser.
 
-{{< figure src="/images/aurora-contest.png" title="A render of the original BAML file found in both 4066 and 4074 produced by the outdated BAML parser." >}}
+{{< figure src="aurora-contest.png" title="A render of the original BAML file found in both 4066 and 4074 produced by the outdated BAML parser." >}}
 
 Luckily, a BAML file using an updated format has since been found and is available for download below. To make the APPA work, simply replace resource 481 in the STREAM folder of the original Jade theme. In the download you will find a correct 481 resource file, a ready patched aero.msstyles and also a text dump of the BAML that provides the APPA.
 
@@ -57,15 +57,13 @@ This package includes the transparent DWM theme by BOFH patched so that it has w
 
 #### Desktop aurora
 
-![](/images/desktop-aurora.png)
+![](desktop-aurora.png)
 
 Aurora in the preview panel isn't the only kind of aurora we know. In build 4066 and up a BAML file for desktop aurora can be found. Desktop aurora is what its name suggests; aurora as a desktop wallpaper. This implementation of aurora was probably introduced in build [4050 with build tag private/lab06_demo.031013-1849](/guide/4050-13) since this build's tag is included in the BAML file. One class for loading the desktop aurora can be found in Longhorn's system files. Sadly, while loading the BAML file Avalon will throw an error.
 
 4066 is also the first build to have aurora as background when the 3D view option is enabled in explorer. The files that make up this aurora effect had been in Longhorn since the start of Milestone 4 and therefore this aurora is often called "Milestone 4 aurora'. It's noticable that this aurora is not rendered using the managed Avalon API, but consists of a set of PNG images rendered using DirectX. Below you see renders made using the original files found in build 4028 created with AssimpView.
 
-![Milestone 4 aurora layers render](/images/milestone-4-aurora-render.png)
-
-![](/images/milestone-4-aurora-side-render.png)
+{{< gallery 50 "milestone-4-aurora-render.png" "milestone-4-aurora-side-render.png" >}}
 
 ####  Aurora as system assessment
 
@@ -77,29 +75,4 @@ No traces of this aurora are present in any pre-reset Longhorn builds. After the
 
 [WinSAT files](/download/winsat-files.zip)
 
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/purple-aurora.jpg)
-</div>
-<div class="ma2 ml0">
-
-![](/images/aurora-5219.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/aurora-5270.png)
-</div>
-</div>
-<div class="flex">
-<div class="ma2 ml0">
-<div></div>
-
-![](/images/aurora-5384.png)
-</div>
-<div class="ma2 ml0 mr0">
-
-![](/images/aurora-6000.png)
-</div>
-</div>
+{{< gallery third "purple-aurora.jpg" "aurora-5219.png" "aurora-5270.png" "aurora-5384.png" "aurora-6000.png" >}}

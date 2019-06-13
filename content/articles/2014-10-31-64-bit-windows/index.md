@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2014-10-31T19:47:10+00:00
 url: /64-bit-windows
-featured_image: /images/amd64.jpg
+featured_image: amd64.jpg
 categories:
   - Research
 
@@ -30,7 +30,7 @@ WoW core files:
 * WoW64win.dll
 * WoW64cpu.dll
 
-![](/images/amd64.jpg)
+![](amd64.jpg)
 
 ####  Compiling Windows for x64
 
