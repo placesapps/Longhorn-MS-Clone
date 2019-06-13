@@ -4,11 +4,13 @@
     <div class="flex flex-column flex-row-ns">
       {{ if .Params.featured_image }}
         {{ $featured_image := .Page.Resources.GetMatch (printf "%s" .Params.featured_image) }}
-        {{ if $featured_image }}
-          {{ $image := $featured_image.Resize "x320" }}
+        {{ if $featured_image  }}
+          {{ if ne (in .Params.featured_image ".svg") true }}
+            {{ $featured_image = $featured_image.Fill "320x240 Center" }}
+          {{ end }}
           <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
             <a href="{{ .Params.url }}" class="db grow">
-              <img src="{{ $image.RelPermalink }}" class="img" alt="image from {{ .Title }}">
+              <img src="{{ $featured_image.RelPermalink }}" class="img" alt="image from {{ .Title }}">
             </a>
           </div>
         {{ else }}
