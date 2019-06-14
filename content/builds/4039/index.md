@@ -7,6 +7,7 @@ build_arch: [ "x86" ]
 build_m: 6
 install_date: "2003-08-28"
 install_key: "TCP8W-T8PQJ-WWRRH-QH76C-99FBW"
+featured_image: transparent-dce.png
 ---
 
 This is the fist leaked image to use a system in which the complete setup is contained inside the install.wim file. This is also the reason why the image is not bootable: setupldr.bin tries to load the WinPE from a non-exsisting index in the install.wim. A simple workaround is to [start the setup from another build's WinPE](/diskpart).
@@ -19,3 +20,7 @@ Windows Registry Editor Version 5.00
 "Carousel"=dword:00000001
 "Panorama"=dword:00000001
 ```
+
+### Gallery
+
+{{< gallery third "transparent-dce.png" "plex.png" "opaque-dce.png" >}}

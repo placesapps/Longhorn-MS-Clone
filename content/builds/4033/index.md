@@ -7,6 +7,7 @@ build_arch: [ "x86" ]
 build_m: 6
 install_date: "2003-07-18"
 install_key: "TCP8W-T8PQJ-WWRRH-QH76C-99FBW"
+featured_image: desktop.png
 ---
 
 The publicly available image of this build has had its pidgen.dll replaced. This means that the orignal product key as listed above does not work. Instead, you will need to enter the key `QW32K-48T2T-3D2PJ-DXBWY-C6WRJ`. If you would like to use the original key, you can replace the unauthentic pidgen.dll (origination from Server 2003 RTM) in the Sources directory with the original file that's for download below.
@@ -23,3 +24,7 @@ Windows Registry Editor Version 5.00
 "Carousel"=dword:00000001
 "Panorama"=dword:00000001
 ```
+
+### Gallery
+
+{{< gallery 25 "desktop.png" "explorer.png" "carousel.png" "panorama.png" >}}
