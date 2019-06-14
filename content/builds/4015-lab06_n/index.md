@@ -5,6 +5,7 @@ url: /builds/4015-lab06_n
 build_tag: "6.0.4015.0.Lab06_n.030403-1706"
 build_arch: [ "x86" ]
 build_m: 5
+featured_image: high-res.jpg
 ---
 
 This build was used at the Desktop Composition Demonstration booth at the [third day of WinHEC 2003](https://web.archive.org/web/20031217090239/http://www.microsoft.com/whdc/winhec/eyeonwinhec/QT3.mspx). At this booth exaggerated desktop animations were shown to emphasize the power of Longhorn’s new graphics subsystem. Effects include wobbly and rotating windows. The animations seen in this build are most likely enabled by installing additional "demo tools" written solely for this occasion. This would mean the animations shown are not unique to the actual build, but are created by invoking the right API functions from the DCE batch file instead. Notice the files visible on the desktop besides the batch file are a controls text document and ep2 video. The video shown is the [Star Wars episode 2 trailer](https://www.youtube.com/watch?v=gYbW1F_c9eM).
@@ -21,3 +22,7 @@ Only one screenshot of this build is known to exist, it was extracted from a Mic
   <source type="video/mp4" src="4015-lab06-footage.mp4" />
   <a href="4015-lab06-footage.mp4">Download video</a>
 </video>
+
+### Gallery
+
+{{< gallery 25 "high-res.jpg" "winver.jpg" "longhorn_winhec_01.jpg" "longhorn_winhec_03.png" "longhorn_winhec_04.png" "longhorn_winhec_05.png" "longhorn_winhec_06.png" >}}

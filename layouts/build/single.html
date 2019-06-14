@@ -25,10 +25,10 @@
             <td class="pa2">{{ delimit .Params.build_arch ", " }}</td>
           </tr>
           {{ end }}
-          {{ if .Params.build_tag }}
+          {{ if .Params.build_m }}
           <tr class="striped--white">
             <th class="pa2 tl">Milestone</th>
-            <td class="pa2">{{ .Params.build_tag }}</td>
+            <td class="pa2">{{ .Params.build_m }}</td>
           </tr>
           {{ end }}
           {{ if .Params.install_date }}
