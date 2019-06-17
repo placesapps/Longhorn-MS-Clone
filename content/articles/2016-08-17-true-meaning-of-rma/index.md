@@ -16,16 +16,16 @@ The _RMA test tile_ already caused some [discussion](http://www.betaarchive.com/
 
 If you were still wondering how to enable this tile in the first place, it's quite simple.
 
-```
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartBar\Modules\RMA Test Tile]
+{{< highlight reg >}}
+Windows Registry Editor Version 5.00
 
-"AssemblyName"="Microsoft.Windows.Client"
-"Friendly Name"="RMA Test"
-"Type"="System.Windows.Desktop.RMATestTile"
-"Transient"=dword:00000000
-```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartBar\Modules\RMATestTile]
+"Carousel"=dword:00000001
+"LVSpy"=dword:00000001
+"Panorama"=dword:00000001
+{{< / highlight >}}
 
-There is not much we can make up out of the appearance of this tile. It displays a stretched copy of the Longhorn analog clock. Maybe the name can lead us somewhere: RMA. What does that mean? Surely, everybody who does online shopping knows what that means: _Return Merchandise Authorization_. This doesn’t really suit the context, however.
+There is not much we can make up out of the appearance of this tile. It displays a stretched copy of the Longhorn analog clock. Maybe the name can lead us somewhere: RMA. What does that mean? Surely, everybody who does online shopping knows what that means: _Return Merchandise Authorization_. This doesn’t really suit the context, however.
 
 Turns out RMA is the abbreviation for a new kind of application introduced in Longhorn. I could no better explain it than [this snippet from the patent](https://patents.google.com/patent/US7669140B2 "Google Patents - System and method for providing rich minimized applications"):
 
@@ -33,9 +33,9 @@ Turns out RMA is the abbreviation for a new kind of application introduced in Lo
 
 ![](rma-registry.png)
 
-As can be seen, the RMA Test Tile by default has its `Transient` property set to true. Only minimizing the associated application will make it visible. Unfortunately, no such application is supplied in any build. Setting `Transient` to false, will make this tile behave like a normal sidebar tile. Note that this tile doesn’t have any further specific behaviour or use: it just draws a placeholder image of the clock. _Nothing more, nothing less._
+As can be seen, the RMA Test Tile by default has its `Transient` property set to true. Only minimizing the associated application will make it visible. Unfortunately, no such application is supplied in any build. Setting `Transient` to false, will make this tile behave like a normal sidebar tile. Note that this tile doesn’t have any further specific behaviour or use: it just draws a placeholder image of the clock. _Nothing more, nothing less._
 
-A _fine_ example of RMA is the use of a media player - which is actually implemented in several builds like the concept scenario below illustrates. Sadly, the images supplied with the patent filing are all black and white (which is a common thing for images that go with patents) and the image quality isn't all that great.
+A _fine_ example of RMA is the use of a media player - which is actually implemented in several builds like the concept scenario below illustrates. Sadly, the images supplied with the patent filing are all black and white (which is a common thing for images that go with patents) and the image quality isn't all that great.
 
 ![](US20050044058A1-20050224-D00014.png)
 
@@ -43,7 +43,7 @@ Here the media player is opened like usual and provides the full suite of functi
 
 ![](US20050044058A1-20050224-D00015.png)
 
-Upon minimizing the media player, the media player tile appears in the sidebar and offers basic functionality.
+Upon minimizing the media player, the media player tile appears in the sidebar and offers basic functionality.
 
 {{< figure src="wmp-tile-concept.png" title="Media player tile close-up" >}}
 
@@ -53,13 +53,13 @@ With the sidebar being severely nerfed after the reset, RMA could never have bee
 
 ![](rma-vista.jpg)
 
-Functionality like this was  made available for developers as part of the platform with the introduction of Windows 7 in the form of [Thumbnail Toolbars](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378460%28v=vs.85%29.aspx#thumbbars "MSDN - Taskbar Extensions").
+Functionality like this was  made available for developers as part of the platform with the introduction of Windows 7 in the form of [Thumbnail Toolbars](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378460%28v=vs.85%29.aspx#thumbbars "MSDN - Taskbar Extensions").
 
 ![](rma-win7.png)
 
 > To provide access to a particular window's key commands without making the user restore or activate the application's window, an active toolbar control can be embedded in that window's thumbnail preview.
 
 ## Sidenote
-The watchful reader may have noticed the glum looking frog in the background of the concept - wow your b/w recognition skills excellent. It looks like this concept is a design iteration in the ‘frog series’ like the one that can be seen in [this video](https://www.youtube.com/watch?v=HFTqOzKaSl8) by UXEvangelist.
+The watchful reader may have noticed the glum looking frog in the background of the concept - wow your b/w recognition skills excellent. It looks like this concept is a design iteration in the ‘frog series’ like the one that can be seen in [this video](https://www.youtube.com/watch?v=HFTqOzKaSl8) by UXEvangelist.
 
 ![](frog-concept-e2e-music.png)

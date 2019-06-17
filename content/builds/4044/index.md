@@ -8,7 +8,7 @@ build_m: 7
 featured_image: 2.jpg
 ---
 
-One screenshot of this particular build was shown at PDC 2003 during the _Avalon Graphics and Media (Part 2): Using Graphics, Animation and Composition in Your Applications_ session (CLI341) by Greg Schechter. This screenshot only showed part of the buildtag. Since then a set of screenshots has leaked showing the build in more detail.
+One screenshot of this particular build was shown at PDC 2003 during the _Avalon Graphics and Media (Part 2): Using Graphics, Animation and Composition in Your Applications_ session (CLI341) by Greg Schechter. This screenshot only showed part of the buildtag. Since then a set of screenshots has leaked showing the build in more detail.
 
 ### Gallery
 

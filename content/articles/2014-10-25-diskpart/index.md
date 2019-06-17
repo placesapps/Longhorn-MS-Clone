@@ -9,11 +9,11 @@ categories:
   - Tutorials
 
 ---
-Diskpart is a command line tool that'll let you manage disks in Windows. Diskpart comes in more than handy when installing Longhorn since numerous Longhorn WinPEs have trouble formatting disks themselves. On this page you will find a brief description on how to use this tool to partition a disk for installing Longhorn and a little extra.
+Diskpart is a command line tool that'll let you manage disks in Windows. Diskpart comes in more than handy when installing Longhorn since numerous Longhorn WinPEs have trouble formatting disks themselves. On this page you will find a brief description on how to use this tool to partition a disk for installing Longhorn and a little extra.
 
-In any WinPE press Shift + F10. This will bring up a command prompt window. In this window type: `diskpart`, now diskpart will initialize. To partition a disk execute the following commands line by line.
+In any WinPE press Shift + F10. This will bring up a command prompt window. In this window type: `diskpart`, now diskpart will initialize. To partition a disk execute the following commands line by line.
 
-```
+{{< highlight batchfile >}}
 select disk 0
 clean
 create partition primary
@@ -21,7 +21,7 @@ select partition 1
 active
 assign
 exit
-```
+{{< / highlight >}}
 
 You now have created a partition on disk 0 which is assigned a drive letter and is active. If there are multiple drives in the system be sure to select the correct disk. For a list of disks you can type `list disk`.
 
@@ -31,11 +31,11 @@ You now have created a partition on disk 0 which is assigned a drive letter and 
 
 Sometimes it's not enough to just partition the drive. A couple of Longhorn installers also have trouble formatting the drive. You can manually format a drive by executing:
 
-```
+{{< highlight batchfile >}}
 format fs=ntfs quick
-```
+{{< / highlight >}}
 
-In the example above the drive you selected before (drive 0) gets quick formatted with the NTFS file-system.
+In the example above the drive you selected before (drive 0) gets quick formatted with the NTFS file-system.
 
 #### Executing setup from WinPE
 

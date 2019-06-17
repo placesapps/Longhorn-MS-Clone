@@ -9,11 +9,11 @@ categories:
   - Research
 
 ---
-A significant part of Longhorn is written in managed C#. Taskbar, sidebar, preview pane&#8230; it's all .NET. I thought it would be interesting to know the mechanics behind this framework, so here we go: an article solely about .NET.
+A significant part of Longhorn is written in managed C#. Taskbar, sidebar, preview pane&#8230; it's all .NET. I thought it would be interesting to know the mechanics behind this framework, so here we go: an article solely about .NET.
 
 Of course, first we need to write our program in a .NET language. When the time has come to test the application you'll first need to compile it to an assembly we can execute. Compiling will usually be done by the MSBuild .NET compiler (previously all .NET languages had their own compiler). This compiler does not compile your source code to native machine code, but instead compiles it to an abstract intermediate form. This might seem a bit vague, but it basically means that your high-level managed code is converted to a lower-level coding format, called bytecode. This bytecode is much easier for a computer to interpret than your high-level source code and is both platform and language independent.
 
-#### Platform independence
+#### Platform independence
 
 Platform independence is a great thing. Compiling your source to native machine code directly would mean that executing of the application is limited to computer with that exact configuration. Compiling to an intermediate form (bytecode) leaves the possibility to run the application on all sorts of computer configuration. In theory , the application could run on all .NET enabled devices.
 
@@ -23,7 +23,7 @@ Since the bytecode is language neutral it's possible for different .NET language
 
 To illustrate the language independence, I took the time to write a console application in both Visual Basic and C#. The application does no more than printing "hello world!" in the console. For both applications the bytecode (IL) representation of the functional part was identical:
 
-```
+{{< highlight nasm >}}
 {
   .entrypoint
   IL_0000: nop
@@ -32,9 +32,9 @@ To illustrate the language independence, I took the time to write a console appl
   IL_000b: nop
   IL_000c: ret
 }
-```
+{{< / highlight >}}
 
-####  Intermediate form in detail
+####  Intermediate form in detail
 
 The abstract intermediate representation of a .NET application consists of two main components: meta-data and managed code. The meta-data contains all the descriptions for the structural items (classes and its members, attributes etc.) and the relationships between the various modules in the application. The managed bytecode holds all the functionality of the application encoded in Microsoft Intermediate Language (MSIL) or Common Intermediate Language (CIL). The intermediate language is the lowest-level program code of the Common Language Infrastructure.
 
@@ -50,4 +50,4 @@ Interpreting the abstract intermediate representation is done by two subsystems 
 
 #### .NET framework and Java
 
-It's uncanny how much .NET and Java have in common. One might almost thing that Java is a rip-off of .NET, but nothing is less true. Since Java came into existence earlier, .NET can be considered a Java rip-off. In a try of Microsoft's to _embrace, extend and exterminate _Java they created the Micorsoft Java VM (MSJVM). Microsoft was, however, sued by Sun Microsystems because of their incomplete Java implementation in 1997. In 2001 Microsoft settled with Sun and agreed to stop MSJVM support. With their campaign "JUMP to .NET" they tried to get as many Java users to use .NET. Clearly, Microsoft failed to exterminate Java since it's still used everywhere. Java is favourable when it comes to platform independence: it literally runs on all systems you can image whereas .NET only runs on Microsoft devices.
+It's uncanny how much .NET and Java have in common. One might almost thing that Java is a rip-off of .NET, but nothing is less true. Since Java came into existence earlier, .NET can be considered a Java rip-off. In a try of Microsoft's to _embrace, extend and exterminate _Java they created the Micorsoft Java VM (MSJVM). Microsoft was, however, sued by Sun Microsystems because of their incomplete Java implementation in 1997. In 2001 Microsoft settled with Sun and agreed to stop MSJVM support. With their campaign "JUMP to .NET" they tried to get as many Java users to use .NET. Clearly, Microsoft failed to exterminate Java since it's still used everywhere. Java is favourable when it comes to platform independence: it literally runs on all systems you can image whereas .NET only runs on Microsoft devices.

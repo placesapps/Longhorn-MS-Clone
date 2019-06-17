@@ -9,13 +9,13 @@ categories:
   - Research
 
 ---
-If you ever bothered to take a look at one of the 64-bit Longhorn compiles, you may have noticed that these builds are extremely empty and lack, for example, the sidebar. There's a good reason why these compiles lack lots of features the x86 Longhorn compiles did have.
+If you ever bothered to take a look at one of the 64-bit Longhorn compiles, you may have noticed that these builds are extremely empty and lack, for example, the sidebar. There's a good reason why these compiles lack lots of features the x86 Longhorn compiles did have.
 
 #### A new architecture
 
-When the development of Longhorn began the 64-bit processors we know today did not exist yet. In 1994 Hewlett Packard partnered with Intel to create a new 64-bit architecture based on an earlier development called "EPIC". This joint venture resulted in the IA-64 architecture that was used with Intel's Itanium range of processors. Remarkable is the lack of backwards compatibility of the IA-64 architecture with x86 instructions. The first Itanium processor was launched in June 2001.
+When the development of Longhorn began the 64-bit processors we know today did not exist yet. In 1994 Hewlett Packard partnered with Intel to create a new 64-bit architecture based on an earlier development called "EPIC". This joint venture resulted in the IA-64 architecture that was used with Intel's Itanium range of processors. Remarkable is the lack of backwards compatibility of the IA-64 architecture with x86 instructions. The first Itanium processor was launched in June 2001.
 
-In reaction to Intel's IA-64 architecture AMD began development of its own architecture. AMD's new architecture was an extension of x86 and still supported all legacy instructions. For this reason it was often called x86-64. AMD released its first 64-bit processor (Opteron) in April 2003. AMD's architecture is often referenced as AMD64. Nowadays x64 editions of Windows still carry a AMD64 tag in their buildstring. After AMD64 was a fact, Intel also started working on a x86-64 processor. Intel implemented the same instruction set AMD had created, but made some minor changes. This resulted in the Intel64 architecture. Generally all x86-64 processors are just called x64 or AMD64.
+In reaction to Intel's IA-64 architecture AMD began development of its own architecture. AMD's new architecture was an extension of x86 and still supported all legacy instructions. For this reason it was often called x86-64. AMD released its first 64-bit processor (Opteron) in April 2003. AMD's architecture is often referenced as AMD64. Nowadays x64 editions of Windows still carry a AMD64 tag in their buildstring. After AMD64 was a fact, Intel also started working on a x86-64 processor. Intel implemented the same instruction set AMD had created, but made some minor changes. This resulted in the Intel64 architecture. Generally all x86-64 processors are just called x64 or AMD64.
 
 #### A new Windows
 
@@ -32,7 +32,7 @@ WoW core files:
 
 ![](amd64.jpg)
 
-####  Compiling Windows for x64
+####  Compiling Windows for x64
 
 The x64 edition of Windows is basically the same code as the x86 edition. The code is almost architecture neutral, it just has to be compiled by another compiler. This compiler depends on the architecture's instruction set. Some parts of Windows that are not written in higher-level languages (C or C++) do need a re-write. An example is the Hardware Abstraction Layer (HAL) which is written in the architecture specific language assembly.
 

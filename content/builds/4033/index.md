@@ -16,14 +16,15 @@ The publicly available image of this build has had its pidgen.dll replaced. This
 
 During setup be sure to select Disk 0. Otherwise, the setup will always state the disk does not have sufficient drive space.
 
-This build is one of the few builds that have a 3D view option in explorer. Applying the registry key below will add additional view modes. Viewing files in explorer with the 3D view-mode is heavily broken in this build.  Enabling DCE is also possible in this build.
+This build is one of the few builds that have a 3D view option in explorer. Applying the registry key below will add additional view modes. Viewing files in explorer with the 3D view-mode is heavily broken in this build. Enabling DCE is also possible in this build.
 
-```
+{{< highlight reg >}}
 Windows Registry Editor Version 5.00
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
 "Carousel"=dword:00000001
 "Panorama"=dword:00000001
-```
+{{< / highlight >}}
 
 ### Gallery
 

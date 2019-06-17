@@ -6,7 +6,7 @@ date: 2018-07-08T15:23:15+00:00
 url: /guide-winfs-and-tasks-in-build-4042
 featured_image: 4042-2017-05-13-13-00-16.png
 categories:
-  - 'Tips &amp; tricks'
+  - 'Tips & tricks'
   - Tutorials
 
 ---
@@ -58,7 +58,7 @@ Now navigate to `C:\Windows\System32\WinFS\log` and open `errorlog` and `FPMErro
 2003-09-11 21:27:10.40 Server Windows File System is ready for client connections<
 ```
 
-As soon as the Windows File Promotion Manager service starts `FPMErrorLog` will contain logging info. As soon as WinFPM starts WinFS will start the `WinFS_Catalog` database and a `Store` database. The WinFPM service will install any pending schemas. To check whether all shared folders were created correctly, pop open `compmgmt.msc` and browse to Shared Folders. You should see a `SQL_{UUID}` share. This shared folder holds information about the filestream which allows the actual WinFS SQL database to save files on the local disk (instead of saving byte blobs in the database).  Read more about [FILESTREAMs in Transact-SQL here](https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-2017).
+As soon as the Windows File Promotion Manager service starts `FPMErrorLog` will contain logging info. As soon as WinFPM starts WinFS will start the `WinFS_Catalog` database and a `Store` database. The WinFPM service will install any pending schemas. To check whether all shared folders were created correctly, pop open `compmgmt.msc` and browse to Shared Folders. You should see a `SQL_{UUID}` share. This shared folder holds information about the filestream which allows the actual WinFS SQL database to save files on the local disk (instead of saving byte blobs in the database).  Read more about [FILESTREAMs in Transact-SQL here](https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-2017).
 
 ![](4042-2018-07-08-16-52-51.png)
 

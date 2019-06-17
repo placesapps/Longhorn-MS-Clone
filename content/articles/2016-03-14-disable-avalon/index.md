@@ -9,7 +9,7 @@ categories:
   - Hacking Avalon
 
 ---
-This is the first post in a series that I'll be doing. Hacking Avalon will be all about interesting stuff in Avalon. Furthermore, I hope to provide some background on how early variants of Avalon work together with the shell in Longhorn. Keep in mind, this series will mainly discuss the earliest revisions of Avalon found in the 3xxx range of builds. The tricks may not always work on later builds. That's it for the intro. Now onto the subject of this post; disabling Avalon in explorer.
+This is the first post in a series that I'll be doing. Hacking Avalon will be all about interesting stuff in Avalon. Furthermore, I hope to provide some background on how early variants of Avalon work together with the shell in Longhorn. Keep in mind, this series will mainly discuss the earliest revisions of Avalon found in the 3xxx range of builds. The tricks may not always work on later builds. That's it for the intro. Now onto the subject of this post; disabling Avalon in explorer.
 
 The addition of Avalon to explorer makes for some interesting new functionality, but doesn’t exactly speed up browsing. There are a couple of ways to gracefully disable Avalon in explorer without breaking other Avalon features.
 

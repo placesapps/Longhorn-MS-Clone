@@ -26,7 +26,7 @@ Note that the VM was created in VMware Workstation 7.1.4 and should also be used
 
 Once unpacked, the VM is 5.59 gigabytes in size. Note that the VM was created on a computer with a 4th generation core i5. Processors with feature-set vastly different from this may not work well with this VM.
 
-Please let me know whether or not the VM works for you.
+Please let me know whether or not the VM works for you.
 
  [Download](/images/4074vm.zip) 1,77 GB (1.907.253.350 bytes)
   

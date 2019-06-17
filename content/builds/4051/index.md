@@ -10,7 +10,7 @@ install_key: "TCP8W-T8PQJ-WWRRH-QH76C-99FBW"
 featured_image: hd.png
 ---
 
-This build was given out to attendees of the _Professional Developers Conference_ (PDC) 2003 and is the very first version of Longhorn to be released by Microsoft publicly. Build 4051 was lacked most, if not all, interesting bits shown by [Hillel Cooperman using a 4050 compile](/guide/4050-xx). As such it lacked Aero Glass and Aurora in the preview pane. Slate was introduced as temporary substitute for the Aero theme. Microsoft representatives commented on this fact that the Aero look was still in development and under heavy security. Only a select group of developers had access to the true Aero theme.  Note that this build is an _idx02_ branch compile which means it has sub-beta quality. This build is infamous for its memory leaks.
+This build was given out to attendees of the _Professional Developers Conference_ (PDC) 2003 and is the very first version of Longhorn to be released by Microsoft publicly. Build 4051 was lacked most, if not all, interesting bits shown by [Hillel Cooperman using a 4050 compile](/guide/4050-xx). As such it lacked Aero Glass and Aurora in the preview pane. Slate was introduced as temporary substitute for the Aero theme. Microsoft representatives commented on this fact that the Aero look was still in development and under heavy security. Only a select group of developers had access to the true Aero theme.  Note that this build is an _idx02_ branch compile which means it has sub-beta quality. This build is infamous for its memory leaks.
 
 ### Gallery
 

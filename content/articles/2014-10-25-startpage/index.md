@@ -15,7 +15,7 @@ Already in build 3683 we can catch a glimpse of the startpage, be it in a very e
 
 ![Early startpage in 3683](early-startpage-in-3683.png)
 
-By the time of build 3706 the startpage progressed further and is much more advanced. The promotion tile that was also seen in 3683 now plays a key role. The tile now serves the user with various tasks he can complete to personalize his computer. If the user doesn't want to complete a task, he has the option to simple skip the task. Completed tasks could easily be made undone again. No examples of tasks are included in the assemblies. A task will open notepad when clicked by default. The status of the tasks is saved in the registry. This registry key reveals that the startpage was meant to be part of the OOBE: `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\TaskPromotions\OOBE`.
+By the time of build 3706 the startpage progressed further and is much more advanced. The promotion tile that was also seen in 3683 now plays a key role. The tile now serves the user with various tasks he can complete to personalize his computer. If the user doesn't want to complete a task, he has the option to simple skip the task. Completed tasks could easily be made undone again. No examples of tasks are included in the assemblies. A task will open notepad when clicked by default. The status of the tasks is saved in the registry. This registry key reveals that the startpage was meant to be part of the OOBE: `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\TaskPromotions\OOBE`.
 
 It looks like the button in the upper corners are there for the sole purpose of debugging the application. The Go button (re)loads the application and plays a little animation. The X button will close the application.
 
@@ -27,7 +27,7 @@ In later builds (3713 through 4001) the startpage lacks the "debug buttons'. Bot
 
 As in build 3706, the promotions are loaded from an external location: `\\shelltest\scratch\ewad\`. The application tries to read the file oobe.xml in this location. By reverse engineering the code we were able to reconstruct the XML file:
 
-```xml
+{{< highlight xml >}}
 <root>
 	<promotion>
 		<UID>12345</UID>
@@ -45,7 +45,7 @@ As in build 3706, the promotions are loaded from an external location: `\\shellt
 		</requirements>
 	</promotion>
 </root>
-```
+{{< / highlight >}}
 
 Note how multiple requirements can be set for each task. Because the startpage for some reason bugs out reading the oobe.xml file you will always need to add more than one `<promotions>` element as it ignores the first one. Build 3706 is completely unable to start when more than one `<promotions>` element is present in the file.
 
@@ -59,7 +59,7 @@ For a long time the startpage was considered as "not accessible" because every t
 
 #### Startpage & Welcome Center
 
-It seem the Startpage made its way into Vista as the Welcome Center. The Welcome Center in Vista has exactly the same purpose as the startpage; getting the user started on the system with various promotions and offers.
+It seem the Startpage made its way into Vista as the Welcome Center. The Welcome Center in Vista has exactly the same purpose as the startpage; getting the user started on the system with various promotions and offers.
 
 {{< gallery 50 "vista-welcome-center-sketch.png" "vista-welcome-center.png" >}}
 

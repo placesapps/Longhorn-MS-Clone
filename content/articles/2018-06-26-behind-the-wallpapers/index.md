@@ -17,7 +17,7 @@ Here's just a funny tidbit I found some time ago to keep you guys entertained. I
 > 
 > S: So, you're the one responsible for all the green grass I see all over campus?
 > 
-> L: Yeah. Well see, that's kind of a trick cause that was.. ..we want to save all our "thunder' for launch so we wanted to come up with something that really showed of the glass really well. So when you run the glass over the blades you can actually see the refraction and you can get a sense of dimension and depth. It's higher fidelity, but it wasn't another wink to anything in the future. It's, sort of, a placeholder - but then a nicer version. But, yeah.. I'm responsible for grass. Even the bails of hay in alpha - I don't know if you remember that (...) 
+> L: Yeah. Well see, that's kind of a trick cause that was.. ..we want to save all our "thunder' for launch so we wanted to come up with something that really showed of the glass really well. So when you run the glass over the blades you can actually see the refraction and you can get a sense of dimension and depth. It's higher fidelity, but it wasn't another wink to anything in the future. It's, sort of, a placeholder - but then a nicer version. But, yeah.. I'm responsible for grass. Even the bails of hay in alpha - I don't know if you remember that (...) 
 
 So know you know who but all those hay bails in the Longhorn alphas 😉 It's kinda interesting that this was all thought through so well; grass because of the glass. And, it's very true: it does show the refraction very nicely.
 

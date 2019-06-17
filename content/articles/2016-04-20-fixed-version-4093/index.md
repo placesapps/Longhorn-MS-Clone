@@ -11,9 +11,9 @@ categories:
 ---
 _This used to be hosted on the initial website two years ago (whoa, time flies). I completely forgot about re-uploading it until now. Enjoy!_
 
-Build 4093 was originally leaked at 28 August 2006 as a heavily edited ISO.  As the original 4093 ISO wasn't bootable the C0d3rz team made a bootable ISO using 4033's winpe. They edited startnet.cmd to start 4093's setup from the usa\_4093\_x86fre.pro\_longhorn directory in the ISO.
+Build 4093 was originally leaked at 28 August 2006 as a heavily edited ISO.  As the original 4093 ISO wasn't bootable the C0d3rz team made a bootable ISO using 4033's winpe. They edited startnet.cmd to start 4093's setup from the usa\_4093\_x86fre.pro\_longhorn directory in the ISO.
 
-Until today (1st May 2014) the C0d3rz ISO was to be used if one would like to install 4093. Not anymore, as Lukáš in collaboration with Melcher were able to put the original 4093 WinPE to work. We, from longhorn.MS, proudly present to you, the proper release of Longhorn Build 4093 with its own PE!
+Until today (1st May 2014) the C0d3rz ISO was to be used if one would like to install 4093. Not anymore, as Lukáš in collaboration with Melcher were able to put the original 4093 WinPE to work. We, from longhorn.MS, proudly present to you, the proper release of Longhorn Build 4093 with its own PE!
 
 Install notes:
 *Unzip

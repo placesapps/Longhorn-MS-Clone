@@ -81,17 +81,17 @@ Interesting to note is that the patent application for the desktop compositor me
 ### 3683
 {{< figure src="3683-dce.png" title="3683 DCE running on real hardware" >}}
 
-**VMware version:** N/A: Only seems to work on real hardware
+**VMware version:** N/A: Only seems to work on real hardware
 
 **Driver version:** N/A
 
-Recent research by JaGoTu shows that this build actually already features DCE. The process of enabling DCE in this build is much the same as later Milestone 3 builds. You are, however, missing out on a UI to do so, like in 3706. Before you can start DCE you will first need to apply the registry key below and restart. You can give "StartupOptions' one of the following values:
+Recent research by JaGoTu shows that this build actually already features DCE. The process of enabling DCE in this build is much the same as later Milestone 3 builds. You are, however, missing out on a UI to do so, like in 3706. Before you can start DCE you will first need to apply the registry key below and restart. You can give "StartupOptions' one of the following values:
 
-  * 0, Disabled
+  * 0, Disabled
   * 1, Enabled on system startup
   * 2, Dynamic control
 
-####  Commands
+####  Commands
 ```
 rundll32 user32.dll,StartDCE
 rundll32 user32.dll,StopDCE
@@ -112,7 +112,7 @@ Windows Registry Editor Version 5.00
 
 **Driver version:** 6.5.x
 
-All these builds have similar DCE effects which can easily be enabled via a button in the user interface. In Display Properties click Advanced. Next, select Allow dynamic controls, apply and click "Enabled now'. Not only do these four builds have an alpha transparency effect on each window, but they also include new animations for minimizing and closing. These build's DCE requires a VMware version in the 6.5 range.
+All these builds have similar DCE effects which can easily be enabled via a button in the user interface. In Display Properties click Advanced. Next, select Allow dynamic controls, apply and click "Enabled now'. Not only do these four builds have an alpha transparency effect on each window, but they also include new animations for minimizing and closing. These build's DCE requires a VMware version in the 6.5 range.
 
 ### 4011 and 4015
 {{< figure src="4011-dce.png" title="DCE in build 4011" >}}
@@ -121,7 +121,7 @@ All these builds have similar DCE effects which can easily be enabled via a but
 
 **Driver version:** 6.5.x
 
-####  Commands
+####  Commands
 ```
 rundll32 uxdesk.dll,DCEStart
 rundll32 uxdesk.dll,DCEStop
@@ -136,13 +136,13 @@ Unlike earlier builds, DCE in these only adds alpha-transparency and no minimize
 
 **Driver version:** 6.5.2
 
-####  Commands
+####  Commands
 ```
 C:\Windows\i386\sbctl start
 C:\Windows\i386\sbctl stop
 ```
 
-In most cases a restart of explorer is required to make the task- and sidebar visible again. Build 4033 has a bug in DCE which causes it to automatically fall-back to CPU processing instead of hardware processing. Therefore, running DCE in this build will not unlock the special borders. By default builds 4039 and 4042 have an opaque theme. You can, however, perform the trick [described here](/4039-tips-tricks) to enable Aero glass.
+In most cases a restart of explorer is required to make the task- and sidebar visible again. Build 4033 has a bug in DCE which causes it to automatically fall-back to CPU processing instead of hardware processing. Therefore, running DCE in this build will not unlock the special borders. By default builds 4039 and 4042 have an opaque theme. You can, however, perform the trick [described here](/4039-tips-tricks) to enable Aero glass.
 
 ### 4066
 {{< figure src="4066-dwm.png" title="DWM on 4066, resulting in some blurry green borders." >}}
@@ -151,12 +151,12 @@ In most cases a restart of explorer is required to make the task- and sidebar vi
 
 **Driver version:** 6.5.2
 
-####  Commands
+####  Commands
 ```
 Ctrl + Shift + F9
 ```
 
-This build uses the green placeholder theme by default, a patched desksrv by FZajac is available which provides glass borders. Replace desksrv with the patched copy at `C:\Windows\System32\` and `C:\Windows\System32\dllcache\`.
+This build uses the green placeholder theme by default, a patched desksrv by FZajac is available which provides glass borders. Replace desksrv with the patched copy at `C:\Windows\System32\` and `C:\Windows\System32\dllcache\`.
 
 [Patched Desksrv for 4066](/download/patched-desksrv-for-4066.zip)
 
@@ -167,7 +167,7 @@ This build uses the green placeholder theme by default, a patched desksrv by FZa
 
 **Driver version:** 6.5.2
 
-####  Commands
+####  Commands
 ```
 C:\Windows\i386\sbctl start
 C:\Windows\i386\sbctl stop
@@ -181,7 +181,7 @@ Windows Registry Editor Version 5.00
 "MILExplorer"=dword:00000001
 ```
 
-The Aero theme can be enabled on this build. See my post titled Aero done right for more information on how to create the Aero theme.
+The Aero theme can be enabled on this build. See my post titled Aero done right for more information on how to create the Aero theme.
 
 ## Drivers
 

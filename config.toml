@@ -12,6 +12,9 @@ description = "A look at a defining Microsoft project"
 gitlab = "https://gitlab.com/hounsell/longhorn-ms"
 featured_image = "/images/header-01.jpg"
 
+[taxonomies]
+category = "categories"
+
 [blackfriday]
 hrefTargetBlank = true
 

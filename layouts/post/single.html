@@ -1,0 +1,30 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw8">
+      <header>
+          <p class="f6 b helvetica tracked">
+            <a href="{{ .CurrentSection.URL }}" class="link black">{{ .CurrentSection.Title | upper }}</a>
+          </p>
+        <h1 class="f1 athelas mb4">
+          {{ .Title }}
+        </h1>
+        <div class="mb4 tracked">
+            <time class="f5 fw4 dib mv1 mr4" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+              {{- .Date.Format "January 2, 2006" -}}
+            </time>
+            {{ with .Params.categories }}
+            {{ range . }}
+              <div class="f5 fw4 dib mv1 mr4">
+                <a href="/categories/{{ . | urlize }}/" class="link black dim">{{ . }}</a>
+              </div>
+            {{ end }}
+            {{ end }}
+        </div>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+{{ end }}

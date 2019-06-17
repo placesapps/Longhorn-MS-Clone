@@ -7,4 +7,4 @@ build_arch: [ "x86" ]
 build_m: 8
 ---
 
-A single screenshot of this build was leaked as a _Christmas gift_ at AeroXP. The screenshot shows us a Movie Maker 3 prototype which is much the same as the prototype found in [build 4093](/builds/4093). Note that this is a privately built build.
+A single screenshot of this build was leaked as a _Christmas gift_ at AeroXP. The screenshot shows us a Movie Maker 3 prototype which is much the same as the prototype found in [build 4093](/builds/4093). Note that this is a privately built build.

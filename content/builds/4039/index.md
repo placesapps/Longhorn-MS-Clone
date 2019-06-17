@@ -14,12 +14,12 @@ This is the fist leaked image to use a system in which the complete setup is con
 
 Build 4039 is one of only a handful of builds that have the 3D view option in the view menu. Both Panorama and Carousel can be unlocked by adding registry keys, however when Carousel view-mode is chosen no icons will be displayed. Also, this build includes DWM and, when started successfully, adds nice window borders. Explorer tends to render windows very slowly.
 
-```
+{{< highlight reg >}}
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
 "Carousel"=dword:00000001
 "Panorama"=dword:00000001
-```
+{{< / highlight >}}
 
 ### Gallery
 
