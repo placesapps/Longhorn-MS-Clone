@@ -45,22 +45,61 @@ INT ShellAboutW(HWND hWnd, LPCWSTR szApp, LPCWSTR szOtherStuff, HICON hIcon);
 static extern int ShellAbout(IntPtr hWnd, string szApp, string szOtherStuff, IntPtr hIcon);
 {{</highlight>}}
 
-Rather than go through and create all these redefinitions - which may also expose information that was limited before to private internal-only header files - using Managed C++ allowed MS to simply reference native functions in much the same way as they would in native C++, for example in this toy program:
+Rather than go through and create all these redefinitions - which may also expose information that was limited before to private internal-only header files - using Managed C++ allowed MS to simply reference native functions in much the same way as they would in native C++, for example in this toy program (this is C++/CLI rather than MC++, which doesn't have the gcnew keyword):
 
 {{<highlight cpp>}}
+#include <string>
 #include "windows.h"
 #include "shellapi.h"
+
 #pragma comment(lib, "shell32.lib")
 
 using namespace System;
 
+const char* show_shell_about()
+{
+    return ShellAbout(NULL, L"C++/CLI Sandbox", L"Hi from the Experience Longhorn project", NULL) == TRUE
+        ? "True"
+        : "False";
+}
+
 int main()
 {
-    bool result = ShellAbout(NULL, L"C++/CLI Sandbox", L"Hi from the Experience Longhorn project", NULL);
-    System::Console::WriteLine("Result: " + result.ToString());
+    auto result = show_shell_about();
+    System::Console::Write("Result: ");
+    System::Console::WriteLine(gcnew System::String(result));
 
     return 0;
 }
+
 {{</highlight>}}
 
-This would have likely been considered a huge benefit to the Shell team which, with strict performance goals, were likely to be passing across the native / managed boundary quite frequently. Unlike C#, it also allows you to have a "mixed-mode" DLL, which contains both native and managed code.
+This would have likely been considered a huge benefit to the Shell team which, with strict performance goals, were likely to be passing across the native / managed boundary quite frequently. Unlike C#, this also allows you to have a "mixed-mode" library or executable, which contains both unmanaged and managed code.
+
+If you were to decompile the compiled version of the toy program above, you'd note some key differences from typical .NET executables. Using an IL decompiler, such as dnSpy, you'd notice that a lot of placeholder classes and structs that represent various structures defined in the Windows SDK headers. In a <Module> class, you'd find the methods that were in the global namespace, such as the `main()` and `show_shell_about()` from the toy program above. In here is our ShellAboutW() import stub, that dnSpy decompiles to the following C#:
+
+{{<highlight csharp>}}
+[SuppressUnmanagedCodeSecurity]
+[DllImport("", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+[MethodImpl(MethodImplOptions.Unmanaged)]
+internal unsafe static extern int ShellAboutW(HWND__*, char*, char*, HICON__*);
+{{</highlight>}}
+
+The `show_shell_about()` method decompiles as so:
+
+{{<highlight csharp>}}
+internal unsafe static sbyte* show_shell_about()
+{
+  return ref (<Module>.ShellAboutW(null, (char*)(&<Module>.?A0x37975f1f.unnamed-global-1), (char*)(&<Module>.?A0x37975f1f.unnamed-global-0), null) != 1)
+    ? ref <Module>.?A0x37975f1f.unnamed-global-3
+    : ref <Module>.?A0x37975f1f.unnamed-global-2;
+}
+{{</highlight>}}
+
+You can see that the strings have been pulled out into the executables' `.rdata` (read-only data) section and that .NET refers to them simply using automatically generated fields.
+
+If you were to open this executable in a more typical decompiler, such as IDA Pro in PE mode, you'd see that unlike typical P/Invokes, a MC++ reference is also included in the imports table of the executable.
+
+### Okay, but what does it all mean?
+
+Well, Managed C++ came with some issues that Microsoft tried to rectify with C++/CLI. In particular, their overloading of the `new` keyword made it more difficult as to which objects would be collected by the managed garbage collector, and which objects had to be cleaned up manually by the developer. The potential outcome of such confusion would be that some objects never got collected or cleaned up, introducing a memory leak. Certainly, it is quite possible to introduce memory leaks in purely managed code, though not in the same way, but it does strike me that this is possibly a major contributing factor to Longhorn's well documented problems in this area. It's also noteworthy that they made the C++/CLI changes in line with the .NET 2.0 / Visual Studio 2005 release, after the Longhorn reset.
