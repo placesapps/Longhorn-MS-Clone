@@ -22,7 +22,7 @@ Install notes:
 
 We would like to thank Hounsell for hosting our website and letting us host the download of the fixed copy.
 
-[Download](/images/4093fixed.zip)
+[Download](https://mega.nz/#!xVxUyKDZ!bO9nwg54iy6qGYDNRlcz4FBpcQn5xExxjuZsi9YT4oI)
 (please do not directly link to the download. Link to this page instead)
 
 
