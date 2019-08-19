@@ -12,4 +12,4 @@ The goal of the Experience Longhorn project is to comprehensively document the L
 
 In the [Builds](/builds/) section you will find BIOS dates, product keys and installation notes to help you install Longhorn today. Moreover, you will also find fixes and interesting facts about each build. In the [Articles](/articles/) section you can find post ranging from elaborate tutorials to technical description of Longhorn features. For the ones less interested in all technical hodgepodge there is the development category completely focused on how Longhorn was being developed at Microsoft.
 
-Longhorn.ms is currently maintained by Thomas Hounsell. You can submit changes via pull requests on [our GitLab repository](https://gitlab.com/hounsell/longhorn-ms).
+Longhorn.ms is currently maintained by Thomas Hounsell. You can submit changes via pull requests on [our GitLab repository](https://gitlab.com/experience-longhorn/longhorn-ms).
