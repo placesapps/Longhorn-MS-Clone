@@ -6,8 +6,8 @@ date: 2014-11-01T14:35:28+00:00
 url: /componentising
 featured_image: targetdesigner.png
 categories:
-  - Development
-  - Research
+  - Features
+  - History
 
 ---
 At WinHEC 2003 Microsoft revealed that Longhorn would be build from the ground up from a list of components. Already before this time various people at Microsoft had stated that Longhorn would be the first "modular" operating system. But what does this all mean? I'll try my best to get clear what componentising really is.

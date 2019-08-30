@@ -6,7 +6,8 @@ date: 2016-03-14T22:01:47+00:00
 url: /disable-avalon
 featured_image: hackingavalon.png
 categories:
-  - Hacking Avalon
+  - History
+  - Features
 
 ---
 This is the first post in a series that I'll be doing. Hacking Avalon will be all about interesting stuff in Avalon. Furthermore, I hope to provide some background on how early variants of Avalon work together with the shell in Longhorn. Keep in mind, this series will mainly discuss the earliest revisions of Avalon found in the 3xxx range of builds. The tricks may not always work on later builds. That's it for the intro. Now onto the subject of this post; disabling Avalon in explorer.

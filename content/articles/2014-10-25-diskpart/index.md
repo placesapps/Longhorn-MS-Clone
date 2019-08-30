@@ -6,7 +6,7 @@ date: 2014-10-25T16:33:28+00:00
 url: /diskpart
 featured_image: longhorn-setup.png
 categories:
-  - Tutorials
+  - User Guides
 
 ---
 Diskpart is a command line tool that'll let you manage disks in Windows. Diskpart comes in more than handy when installing Longhorn since numerous Longhorn WinPEs have trouble formatting disks themselves. On this page you will find a brief description on how to use this tool to partition a disk for installing Longhorn and a little extra.

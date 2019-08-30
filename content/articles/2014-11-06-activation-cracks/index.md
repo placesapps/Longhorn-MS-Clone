@@ -6,7 +6,8 @@ date: 2014-11-06T19:23:48+00:00
 url: /activation-cracks
 featured_image: null
 categories:
-  - 'Tips & tricks'
+  - User Guides
+  - Downloads
 
 ---
 Run Microsoft's Windows "Longhorn" today using these activation cracks for each build. Simply replace the "winlogon.exe" in your System32 folder with the copies contained in the ZIP below.

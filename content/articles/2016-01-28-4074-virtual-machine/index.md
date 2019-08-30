@@ -4,10 +4,10 @@ author: Melcher
 type: post
 date: 2016-01-28T14:25:46+00:00
 draft: true
-url: /?p=1369
+url: /longhorn-4074-vm
 featured_image: vm.png
 categories:
-  - Special Download
+  - Downloads
 
 ---
 For your convenience, I uploaded a pre-configured Longhorn VM for you to download!

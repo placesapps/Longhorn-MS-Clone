@@ -6,7 +6,8 @@ date: 2016-04-22T15:01:27+00:00
 url: /installing-drivers
 featured_image: hard-wiz-err-3.png
 categories:
-  - Tutorials
+  - User Guides
+  - Downloads
 
 ---
 When using Longhorn it's a must to known how to manually install drivers in Windows. The process is basically the same in all versions of Windows, but I thought it couldn't hurt if I would write up a short tutorial for those people new to installing drivers.

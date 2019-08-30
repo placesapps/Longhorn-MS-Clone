@@ -6,7 +6,7 @@ date: 2016-01-27T08:37:16+00:00
 url: /hillel-demoes-longhorn-extended-cut
 featured_image: hilleldemopdc.png
 categories:
-  - Concept spotlight
+  - History
 
 ---
 Here it is. 6 minutes of Hillel Cooperman introducing Longhorn to the public during Bill Gates' keynote on 27 October 2003 at PDC '03 in Los Angeles. Originally this demo was cut from the footage from Bill Gates' keynote that was published online at Channel9. I found bits and bops of the footage scattered over the web and decided to put them together in one large video. I complemented some of the original footage with videos by Paul Thurrott. The build shown is known to be [4050.private/lab06_demo](/builds/4050-pdc).

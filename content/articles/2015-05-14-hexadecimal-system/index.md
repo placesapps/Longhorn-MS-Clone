@@ -6,7 +6,7 @@ date: 2015-05-14T14:07:38+00:00
 url: /hexadecimal-system
 featured_image: hex-field.png
 categories:
-  - Research
+  - History
 
 ---
 This quick introduction to hex was originally to be part of another article, but became quite long and therefore I decided to separate it. Even though it doesn't have anything to do with Longhorn in particular I believe it will be worth the read.

@@ -6,7 +6,7 @@ date: 2016-04-20T18:08:50+00:00
 url: /fixed-version-4093
 featured_image: 4093-fixed-1.png
 categories:
-  - Special Download
+  - Downloads
 
 ---
 _This used to be hosted on the initial website two years ago (whoa, time flies). I completely forgot about re-uploading it until now. Enjoy!_

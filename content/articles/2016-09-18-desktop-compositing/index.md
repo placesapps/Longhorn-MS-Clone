@@ -6,8 +6,8 @@ date: 2016-09-18T11:48:55+00:00
 url: /desktop-compositing
 featured_image: aero-flip.png
 categories:
-  - Research
-  - Tutorials
+  - Features
+  - User Guides
 
 ---
 

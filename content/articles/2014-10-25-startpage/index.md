@@ -6,7 +6,7 @@ date: 2014-10-25T15:48:28+00:00
 url: /startpage
 featured_image: startpage-3718.png
 categories:
-  - Research
+  - Features
 
 ---
 The Longhorn Startpage is a feature present in Milestone 3 builds. The startpage appears to be an early attempt at replacing the [OOBE (Out-Of-Box Experience)](/oobe) that these builds carry over from Windows XP.

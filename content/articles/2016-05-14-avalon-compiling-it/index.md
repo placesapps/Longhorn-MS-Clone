@@ -6,7 +6,7 @@ date: 2016-05-14T12:56:07+00:00
 url: /avalon-compiling-it
 featured_image: xaml-direct.png
 categories:
-  - Hacking Avalon
+  - History
 
 ---
 In this third part of the Hacking Avalon series we are taking a closer look at the process of making an Avalon application. To do this, we will be using a special tool only available in early Longhorn builds. This tool is called the Avalon Compiler or simply "ac'. This tool does what its name suggests; compile Avalon. But what is that precisely?

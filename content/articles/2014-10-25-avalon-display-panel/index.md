@@ -6,7 +6,7 @@ date: 2014-10-25T19:33:31+00:00
 url: /avalon-display-panel
 featured_image: display-panel-3683.png
 categories:
-  - Research
+  - Features
 
 ---
 Only two builds, build 3683 and build 4093 have a working, accessible Display Properties control panel, out of the box. These two Avalon display panels are extremely different in construction, and it is entirely possible that the two are the result of two entirely different development efforts, baring no connection beyond their function and underlying technology. Later Milestone 3 builds can have the 3683-style enabled through the use of a registry key, as detailed below.

@@ -6,7 +6,7 @@ date: 2014-10-31T19:47:10+00:00
 url: /64-bit-windows
 featured_image: amd64.jpg
 categories:
-  - Research
+  - History
 
 ---
 If you ever bothered to take a look at one of the 64-bit Longhorn compiles, you may have noticed that these builds are extremely empty and lack, for example, the sidebar. There's a good reason why these compiles lack lots of features the x86 Longhorn compiles did have.

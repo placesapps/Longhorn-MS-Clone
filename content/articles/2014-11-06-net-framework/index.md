@@ -6,7 +6,7 @@ date: 2014-11-06T20:17:10+00:00
 url: /net-framework
 featured_image: null
 categories:
-  - Research
+  - History
 
 ---
 A significant part of Longhorn is written in managed C#. Taskbar, sidebar, preview pane&#8230; it's all .NET. I thought it would be interesting to know the mechanics behind this framework, so here we go: an article solely about .NET.

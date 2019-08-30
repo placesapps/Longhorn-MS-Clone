@@ -5,8 +5,7 @@ date: 2016-05-09T10:00:00+00:00
 url: /phodeo-in-detail
 featured_image: phodeo-close-up.png
 categories:
-  - Concept spotlight
-  - Feature review
+  - History
 
 ---
 

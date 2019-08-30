@@ -6,7 +6,7 @@ date: 2017-05-17T17:47:17+00:00
 url: /some-build
 featured_image: 408x-2.png
 categories:
-  - Research
+  - History
 
 ---
 I'm on some sort of "write down all the things" spree, [documenting things](https://www.betaarchive.com/forum/viewtopic.php?f=62&t=33865 "BetaArchive - Longhorn for everyday use (back then)") I've found in the past, but never properly have written down here on longhorn.ms. Today I'd like to have a brief look at this unidentified build.

@@ -6,7 +6,7 @@ date: 2016-05-07T15:00:57+00:00
 url: /early-development
 featured_image: timeline.svg
 categories:
-  - Development
+  - History
 
 ---
 Often times people are confused to hear Longhorn was based off of Windows Server 2003. To the newcomer it seems more plausible that it was instead based off of Windows XP because early builds look so much like it. In this post we will have an in-depth look at the early beginning of the Longhorn project. Along the way we will discover how Longhorn emerged from the Server 2003 code base.

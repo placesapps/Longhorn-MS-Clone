@@ -6,8 +6,7 @@ date: 2018-06-26T22:25:14+00:00
 url: /the-reset
 featured_image: 4042-2014-11-17-14-34-01.png
 categories:
-  - Development
-  - Research
+  - History
 
 ---
 The piece of text you read below was originally part of the "[Guide](/builds)" section present on the very first iteration of the "Experience Longhorn" site. Since the switch to WordPress as a CMS and all changes to the theme there has been no more place to have it on what is now called the [Builds list](/builds). I really didn't want to throw the story on the reset away though, so here you have it: a short an concise explanation about the infamous Longhorn reset.

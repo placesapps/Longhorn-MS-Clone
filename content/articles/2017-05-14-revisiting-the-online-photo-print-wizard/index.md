@@ -6,8 +6,7 @@ date: 2017-05-14T14:09:12+00:00
 url: /revisiting-the-online-photo-print-wizard
 featured_image: 4042-2017-05-14-13-53-05.png
 categories:
-  - Feature review
-  - Tutorials
+  - Features
 
 ---
 In this post I will have a look at how one can unlock the "full potential' of the wizard - to lift a corner of the veil: it doesn't have a lot of potential. If you can vaguely remember me writing about exactly this subject a few years back.. you are right, but with the switch to the WordPress powered website I totally forgot to place the original article back so here I am revisiting the subject C:

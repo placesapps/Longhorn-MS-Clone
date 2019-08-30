@@ -6,8 +6,8 @@ date: 2016-12-17T13:49:43+00:00
 url: /aero-done-right
 featured_image: 4074-dwm-jade.png
 categories:
-  - Feature review
-  - Tutorials
+  - Features
+  - User Guides
 
 ---
 A lot of people have been struggling to get Aero to work in build 4074. In this post I want to show you how Aero can be enabled along with a little bit of its history. If you came here looking for information about Aurora, please see my post about [Aurora & Aero](/aurora-aero).

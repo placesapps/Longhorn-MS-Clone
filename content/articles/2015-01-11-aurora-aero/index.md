@@ -6,7 +6,8 @@ date: 2015-01-11T10:56:59+00:00
 url: /aurora-aero
 featured_image: aurora-5219.png
 categories:
-  - Tutorials
+  - Features
+  - User Guides
 
 ---
 Aurora is one of the eye-candy features which is best represented in Milestone 7 builds. Using the powerful Avalon presentation engine, Longhorn was able to draw fancy animations, like Aurora, without any significant performance hit on the processor. Aurora in the preview panel was first shown at the PDC 2003 conference when a [private build was showcased](/guide/4050-xx). At first sight many people thought the demo was just a flash mock-up, but Hillel Cooperman was fast to debunk this. The particular demo shows us working WinFS, content-based thumbnails, Aero Glass and an animated aurora effect in the preview panel. Most of these features wouldn't be seen again until the next year at WinHEC 2004. Although the "WinHEC build", 4074, does have a working DWM engine, at first it looked like it didn't have any aurora at all.

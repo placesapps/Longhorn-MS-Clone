@@ -6,7 +6,8 @@ date: 2016-01-11T10:39:45+00:00
 url: /exposing-a-spy
 featured_image: phodeo-top.png
 categories:
-  - Research
+  - Features
+  - History
 
 ---
 Most of you will probably be aware of some of the hidden view options available throughout the Longhorn builds. These views are commonly known as "Carousel" and "Panorama". The latter is often also called "Phodeo". Enabling the 3D view-mode as well as one of these hidden views causes a DirectX rendered view to appear instead of the familiar plain 2D view. The DirectX powered view features all sorts of animation to spice up the browsing experience.

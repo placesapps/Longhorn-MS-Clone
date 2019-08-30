@@ -5,10 +5,10 @@ type: post
 date: 2015-08-14T14:12:22+00:00
 url: /self-hosting
 featured_image: 4042votenow.png
-        
+
 categories:
-  - Development
-  - Research
+  - Features
+  - History
 
 ---
 At Microsoft it's common practice to use products still under development to continue development of that very product. Once a stable version of a product is available, developers are encouraged to install it on their workstations and use it for every day use. Developers using the product can directly provide feedback and report bugs to teams working on certain features.  This process is internally called _self-hosting_. Often times the process is also referred to as "eating your own dog food" or _doogfooding_: when the product is no good and tastes nothing better than dog food, developers will still need to _eat_ it.

@@ -6,7 +6,7 @@ date: 2015-03-09T21:24:14+00:00
 url: /pig-latin
 featured_image: build-4029-piglatin.png
 categories:
-  - Development
+  - History
 
 ---
 While exploring Longhorn builds you might have noticed these weird spelling mistakes in the Windows branding  like; "onghornLay rofessionalPay" and wondered whether one of the developers had a breakdown while typing this. In this article I will elaborate on the exact purpose of the "onghornLay" branding.

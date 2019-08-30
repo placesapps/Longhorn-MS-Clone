@@ -6,7 +6,7 @@ date: 2014-10-25T20:17:03+00:00
 url: /my-tv-and-movies
 featured_image: mytv-guide.png
 categories:
-  - Research
+  - Features
 
 ---
 The My TV and Movies _library_ becomes visible when using the Media Center Edition (_Freestyle_) variant of some Longhorn builds. The My TV and Movies library is a media application for recording and watching TV. The application is an Avalon container and is opened in Internet Explorer by the Avalon Shell Handler. The container itself includes a couple of dll and BAML files as well as a manifest.

@@ -6,7 +6,7 @@ date: 2014-11-06T13:06:36+00:00
 url: /oobe
 featured_image: 1.png
 categories:
-  - Research
+  - Features
 
 ---
 With the new image-based installation introduced in Milestone 4 it was also time for a revamped out-of-box experience (OOBE) wizard. The first build to feature the image-based install and new OOBE wizard is [build 4001](/guide/b4001).

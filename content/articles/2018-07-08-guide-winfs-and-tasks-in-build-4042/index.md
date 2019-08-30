@@ -6,8 +6,8 @@ date: 2018-07-08T15:23:15+00:00
 url: /guide-winfs-and-tasks-in-build-4042
 featured_image: 4042-2017-05-13-13-00-16.png
 categories:
-  - 'Tips & tricks'
-  - Tutorials
+  - Features
+  - User Guides
 
 ---
 A big new thing in Longhorn were the tasks and help topics integrated into Explorer. Many builds show an empty space where these tasks would go in Explorer's task pane, but no tasks are showing. In this post I'll describe a the step-by-step process of getting these tasks to work on build 4042. The idea is that we go from an empty pane to a nice and completely filled pane like in the image below.

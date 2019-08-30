@@ -6,7 +6,7 @@ date: 2018-06-26T22:17:33+00:00
 url: /behind-the-wallpapers
 featured_image: ws_Vista_grass_1600x1200.jpg
 categories:
-  - Research
+  - History
 
 ---
 Here's just a funny tidbit I found some time ago to keep you guys entertained. In [an interview on Channel9](https://channel9.msdn.com/Shows/WM_IN/Jenny-Lam-Designing-Experiences-at-Microsoft "Jenny Lam - Designing Experiences at Microsoft"), Robert Scoble asks a designer on the Windows team, Jenny Lam some questions about Vista and how its coming up Channel9. During the interview the following comes up on the subject of wallpapers:

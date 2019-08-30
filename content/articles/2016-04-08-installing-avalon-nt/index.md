@@ -6,7 +6,8 @@ date: 2016-04-08T13:25:55+00:00
 url: /installing-avalon-nt
 featured_image: avalon-on-xp.png
 categories:
-  - Hacking Avalon
+  - History
+  - User Guides
 
 ---
 Always wanted to experiment with Avalon on Windows XP? In this second part of the "Hacking Avalon" series we're going to install not only Avalon but also some other Longhorn component. In this post I will take Windows XP as example, but the installer is also compatible with Server 2003.  Below is a description of the included components and their use.

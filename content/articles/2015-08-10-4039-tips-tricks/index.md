@@ -5,7 +5,8 @@ type: post
 date: 2015-08-10T11:53:14+00:00
 url: /4039-tips-tricks
 categories:
-  - 'Tips & tricks'
+  - Features
+  - User Guides
 
 ---
 This is the very first page in its kind; a tips 'n tricks page. More of these pages will follow for other interesting builds, showing you the ins and outs and providing easy tutorials to activate hidden features. Pages like this will be updated every so often to include the latest finds. But for now, 4039.

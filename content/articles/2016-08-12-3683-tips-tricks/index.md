@@ -6,7 +6,8 @@ date: 2016-08-12T19:40:50+00:00
 url: /3683-tips-tricks
 featured_image: 3683.png
 categories:
-  - 'Tips & tricks'
+  - Features
+  - User Guides
 
 ---
 Longhorn build 3683 is the "youngest' of all Longhorn builds we have access to, dating back to September 2002. As such you might expect it to be very similar to XP and Server 2003 versions of Windows. When looking superficially at this build this may seem to be correct, but for those that care to take a closer look there are plenty of new features to be found throughout this build. Moreover, when taking a look under the hood, it becomes apparent that technologies like desktop compositing and WinFS had already largely been implemented by this time. On this page I'll point out some of the often missed/forgotten features present in this build.

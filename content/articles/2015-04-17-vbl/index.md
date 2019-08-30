@@ -6,8 +6,7 @@ date: 2015-04-17T15:19:42+00:00
 url: /vbl
 featured_image: null
 categories:
-  - Development
-  - Research
+  - History
 
 ---
 Ever looked at a Windows build list and wondered what all those different tags mean? Or did you ever wonder about the production process of Windows? If yes, you've just clicked the correct article. This article will elaborate on the Windows build process as used during the pre-reset Longhorn development. Please note that even though I've conducted rigorous research, not all information in this article may be accurate.
