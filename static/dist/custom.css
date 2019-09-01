@@ -1,0 +1,11 @@
+.avenir, .athelas
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nested-img img
+{
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}

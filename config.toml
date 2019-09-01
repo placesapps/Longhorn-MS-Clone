@@ -11,6 +11,7 @@ enableRobotsTXT = true
 description = "A look at a defining Microsoft project"
 gitlab = "https://gitlab.com/experience-longhorn/longhorn-ms"
 featured_image = "/images/header-01.jpg"
+custom_css = [ "dist/custom.css" ]
 
 [taxonomies]
 category = "categories"
