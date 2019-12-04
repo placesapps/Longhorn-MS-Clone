@@ -3,7 +3,7 @@ title: 'Guide: WinFS and tasks in build 4042'
 author: Melcher
 type: post
 date: 2018-07-08T15:23:15+00:00
-url: /guide-winfs-and-tasks-in-build-4042
+url: /guide-winfs-and-tasks-in-build-4042/
 featured_image: 4042-2017-05-13-13-00-16.png
 categories:
   - Features
@@ -18,7 +18,7 @@ A big new thing in Longhorn were the tasks and help topics integrated into Explo
 
 Tasks are stored on the system as `*.help` files. These files can be found in `C:\Windows\HELP`. These files are compiled by combining multiple other files such as MAML. The Micorsoft Assistance Markup-Language (MAML) was a new addition to define help topic and tasks in Longhorn. The files defining tasks for explorer are not in MAML format, but rather contain serialized .NET objects defined search and task behavior. A good resource on [how to create your own help files can be found here](https://www.help-info.de/en/Help_Info_AP_Help/longhorn_4051_first_steps.htm).
 
-It is interesting to note that the <em>NuiAnnotations.help</em> file contains a sample snippet of a task definition which was generated using `XMLSpy v4.4`. The root element contains a `snapshotDate` which tells us this sample was created as early as 17 December 2001 at 9:30 AM. This substantiates the claims I made earlier in my article about [the very beginning of Longhorn](/early-development).
+It is interesting to note that the <em>NuiAnnotations.help</em> file contains a sample snippet of a task definition which was generated using `XMLSpy v4.4`. The root element contains a `snapshotDate` which tells us this sample was created as early as 17 December 2001 at 9:30 AM. This substantiates the claims I made earlier in my article about [the very beginning of Longhorn](/early-development/).
 
 ### Setting up WinFS
 

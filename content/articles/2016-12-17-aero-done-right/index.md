@@ -3,14 +3,14 @@ title: Aero done right
 author: Melcher
 type: post
 date: 2016-12-17T13:49:43+00:00
-url: /aero-done-right
+url: /aero-done-right/
 featured_image: 4074-dwm-jade.png
 categories:
   - Features
   - User Guides
 
 ---
-A lot of people have been struggling to get Aero to work in build 4074. In this post I want to show you how Aero can be enabled along with a little bit of its history. If you came here looking for information about Aurora, please see my post about [Aurora & Aero](/aurora-aero).
+A lot of people have been struggling to get Aero to work in build 4074. In this post I want to show you how Aero can be enabled along with a little bit of its history. If you came here looking for information about Aurora, please see my post about [Aurora & Aero](/aurora-aero/).
 
 #### A theme with two faces
 
@@ -20,7 +20,7 @@ According to internal documentation, personal authorization by Scott Hanggie was
 
 {{< figure src="aero-pat.png" title="Note that only the border is transparent. Probably, MILExplorer has not been set in the registry." >}}
 
-Although there is no way to tell when this screenshot was taken and on which build, I tend to think it was taken on one of the many 4050 [lab06_demo](/builds/branch/lab06/lab06_demo) builds compiled during 2003 leading up to the [PDC 2003 demo build](/builds/4050-pdc). By default the build from the lab06_demo branch had an appearance similar (if not identical) to the publicly released build at PDC 2003, [4051](/builds/4051). In contrast to the public build these builds, however, did have full support for Aero. The sad news that the public build would not yet feature Aero was brought by [Paul Thurrott](http://web.archive.org/web/20060310222543/http://www.windowsitpro.com/Articles/Index.cfm?ArticleID=40367%26DisplayTab=Article "Windows IT Pro - Exclusive: PDC Attendees to Get Aero Demo Only") in September:
+Although there is no way to tell when this screenshot was taken and on which build, I tend to think it was taken on one of the many 4050 [lab06_demo](/builds/branch/lab06/lab06_demo/) builds compiled during 2003 leading up to the [PDC 2003 demo build](/builds/4050-pdc/). By default the build from the lab06_demo branch had an appearance similar (if not identical) to the publicly released build at PDC 2003, [4051](/builds/4051/). In contrast to the public build these builds, however, did have full support for Aero. The sad news that the public build would not yet feature Aero was brought by [Paul Thurrott](http://web.archive.org/web/20060310222543/http://www.windowsitpro.com/Articles/Index.cfm?ArticleID=40367%26DisplayTab=Article "Windows IT Pro - Exclusive: PDC Attendees to Get Aero Demo Only") in September:
 
 > For the past several weeks, Microsoft has forked the Longhorn code to develop a special PDC build that's separate and distinct from the main code fork. This build will include virtually every Longhorn technology except Aero(&#8230;)
 
@@ -40,7 +40,7 @@ Although Microsoft employees denied any claims of Aero and DWM being present and
 
 #### Getting ourselves some Aero
 
-Before trying to enable Aero be sure to have a look at this post I wrote earlier: [Destkop Compositing](/desktop-compositing). On that page I explain everything you need to know to get DWM working on your (virtual) machine. So, go have a look there - I'll wait.
+Before trying to enable Aero be sure to have a look at this post I wrote earlier: [Destkop Compositing](/desktop-compositing/). On that page I explain everything you need to know to get DWM working on your (virtual) machine. So, go have a look there - I'll wait.
 
 Okay, done that? Now that you have installed the proper drivers, it’s probably a good thing to reboot the computer for the changes to take affect (if you haven't do so already).
 
@@ -84,6 +84,6 @@ tskill explorer
 
 #### Results
 
-If everything went corrent you should end up with something like the picture below. Note that the screenshot also shows the Animated Aurora Preview Pane. More information on how to patch the theme can be found in [another post](/aurora-aero#fix). You might have also noticed that the borders on all windows are still actually opaque and not the Aero translucent kind. Unfortunately, the original resources are not available in any build. There are, however, a few very good patched theme files with transparency available on the internet as well as a build of 4074 (TWIWMTB) that has a pre-patched theme file.
+If everything went corrent you should end up with something like the picture below. Note that the screenshot also shows the Animated Aurora Preview Pane. More information on how to patch the theme can be found in [another post](/aurora-aero/#fix). You might have also noticed that the borders on all windows are still actually opaque and not the Aero translucent kind. Unfortunately, the original resources are not available in any build. There are, however, a few very good patched theme files with transparency available on the internet as well as a build of 4074 (TWIWMTB) that has a pre-patched theme file.
 
 {{< figure src="4074-dwm-jade.png" title="Aero taskbar and sidebar show up when using an altered version of the Jade theme" >}}

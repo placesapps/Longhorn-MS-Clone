@@ -3,14 +3,14 @@ title: 'Aurora & Aero'
 author: Melcher
 type: post
 date: 2015-01-11T10:56:59+00:00
-url: /aurora-aero
+url: /aurora-aero/
 featured_image: aurora-5219.png
 categories:
   - Features
   - User Guides
 
 ---
-Aurora is one of the eye-candy features which is best represented in Milestone 7 builds. Using the powerful Avalon presentation engine, Longhorn was able to draw fancy animations, like Aurora, without any significant performance hit on the processor. Aurora in the preview panel was first shown at the PDC 2003 conference when a [private build was showcased](/guide/4050-xx). At first sight many people thought the demo was just a flash mock-up, but Hillel Cooperman was fast to debunk this. The particular demo shows us working WinFS, content-based thumbnails, Aero Glass and an animated aurora effect in the preview panel. Most of these features wouldn't be seen again until the next year at WinHEC 2004. Although the "WinHEC build", 4074, does have a working DWM engine, at first it looked like it didn't have any aurora at all.
+Aurora is one of the eye-candy features which is best represented in Milestone 7 builds. Using the powerful Avalon presentation engine, Longhorn was able to draw fancy animations, like Aurora, without any significant performance hit on the processor. Aurora in the preview panel was first shown at the PDC 2003 conference when a [private build was showcased](/guide/4050-xx/). At first sight many people thought the demo was just a flash mock-up, but Hillel Cooperman was fast to debunk this. The particular demo shows us working WinFS, content-based thumbnails, Aero Glass and an animated aurora effect in the preview panel. Most of these features wouldn't be seen again until the next year at WinHEC 2004. Although the "WinHEC build", 4074, does have a working DWM engine, at first it looked like it didn't have any aurora at all.
 
 But it did. The effect was found and applications were made to show what it would look like when working. Only some years ago a modded 4074 image was released under the name _The Way It Was Meant To Be_ (TWIWMTB) which added the fully working aurora effect to explorer. In the remainder of this article I will explain more about Aero and why the aurora which is available in build 4066 and 4074 doesn't work in the first place and how it works at all. Moreover, I will go one the steps needed to manually enable the Animated Preview Panel Aurora (APPA) in build 4074.
 
@@ -28,7 +28,7 @@ To convert Jade to Aero you need to rename the theme files and edit the .theme f
 
 Applying the Aero theme will result in a completely new style. If you don't see the new task and sidebar, you might need to restart explorer.exe. Note that even though the new style task and sidebar are only enabled when the Aero theme is applied, they aren't part of the Aero theme itself, but a system library. They will only show once a "theme name check' has been passed.
 
-Build 4066 is the first build where above described "Jade to Aero conversion" works. Aero is not exclusive to Milestone 7 builds though, the theme was already [referenced in much earlier builds such as 4033 and 4039](/4039-tips-tricks).
+Build 4066 is the first build where above described "Jade to Aero conversion" works. Aero is not exclusive to Milestone 7 builds though, the theme was already [referenced in much earlier builds such as 4033 and 4039](/4039-tips-tricks/).
 
 Note that converting Jade to Aero will not enable the transparent Aero Glass theme, but will show up using greenish borders. For 4074 and 4066 patched files exist to enable transparent window borders.
 
@@ -60,7 +60,7 @@ This package includes the transparent DWM theme by BOFH patched so that it has w
 
 ![](desktop-aurora.png)
 
-Aurora in the preview panel isn't the only kind of aurora we know. In build 4066 and up a BAML file for desktop aurora can be found. Desktop aurora is what its name suggests; aurora as a desktop wallpaper. This implementation of aurora was probably introduced in build [4050 with build tag private/lab06_demo.031013-1849](/guide/4050-13) since this build's tag is included in the BAML file. One class for loading the desktop aurora can be found in Longhorn's system files. Sadly, while loading the BAML file Avalon will throw an error.
+Aurora in the preview panel isn't the only kind of aurora we know. In build 4066 and up a BAML file for desktop aurora can be found. Desktop aurora is what its name suggests; aurora as a desktop wallpaper. This implementation of aurora was probably introduced in build [4050 with build tag private/lab06_demo.031013-1849](/guide/4050-13/) since this build's tag is included in the BAML file. One class for loading the desktop aurora can be found in Longhorn's system files. Sadly, while loading the BAML file Avalon will throw an error.
 
 4066 is also the first build to have aurora as background when the 3D view option is enabled in explorer. The files that make up this aurora effect had been in Longhorn since the start of Milestone 4 and therefore this aurora is often called "Milestone 4 aurora'. It's noticable that this aurora is not rendered using the managed Avalon API, but consists of a set of PNG images rendered using DirectX. Below you see renders made using the original files found in build 4028 created with AssimpView.
 

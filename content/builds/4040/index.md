@@ -1,7 +1,7 @@
 ---
 title: "4040.Lab04_N"
 type: build
-url: /builds/4040
+url: /builds/4040/
 build_tag: "6.0.4040.0.Lab04_N.030828-1910"
 build_arch: [ "x86" ]
 build_m: 6

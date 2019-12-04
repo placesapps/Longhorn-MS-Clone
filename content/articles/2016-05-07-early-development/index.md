@@ -3,7 +3,7 @@ title: The very beginning
 author: Melcher
 type: post
 date: 2016-05-07T15:00:57+00:00
-url: /early-development
+url: /early-development/
 featured_image: timeline.svg
 categories:
   - History
@@ -15,7 +15,7 @@ Often times people are confused to hear Longhorn was based off of Windows Server
 
 #### Trunk based development
 
-Before we begin, it's good to know something about how Windows is developed. When developing a large software application there are various ways to separate the developmental code from the release code. One of these ways is trunk based development. Using trunk based development there is one clearly distinguishable shared branch all developers commit their code changes to. This one branch is called  the "trunk".  For Windows this trunk is better known as the [_main_ branch](/builds/branch/main). The trunk is in continuous development and over time Windows versions are released from the trunk's code base.
+Before we begin, it's good to know something about how Windows is developed. When developing a large software application there are various ways to separate the developmental code from the release code. One of these ways is trunk based development. Using trunk based development there is one clearly distinguishable shared branch all developers commit their code changes to. This one branch is called  the "trunk".  For Windows this trunk is better known as the [_main_ branch](/builds/branch/main/). The trunk is in continuous development and over time Windows versions are released from the trunk's code base.
 
 Whenever a product is due to be released a _release branch_ is forked from the trunk. A release branch is maintained as long as the product is supported. When critical updates are available for the trunk usually these will also be released in some form for release branches affected by the same problems. This way the release branches will more or less stay in synch with the trunk. Eventually, when the product is being phased out and reaches the end-of-life (EOL) status, the branch will be abandoned.
 
@@ -36,7 +36,7 @@ In 2001, somewhere between 17 and 23 July the main branch was forked to the _xpc
 
 ![](timeline.svg)
 
-The first Longhorn build confirmed to exist is [3663](/builds/3663) compiled by [_lab06\_n_](/builds/branch/lab06/lab06_n). There are, however, indications that Longhorn builds were already being compiled as early as 2001.
+The first Longhorn build confirmed to exist is [3663](/builds/3663/) compiled by [_lab06\_n_](/builds/branch/lab06/lab06_n/). There are, however, indications that Longhorn builds were already being compiled as early as 2001.
 
 Exhibits from the Microsoft v.s. Comes case give a unique insight in some of the earliest development and planning of Longhorn. According to document _[PX06977](PX06977.pdf)_, planning for Longhorn was supposed to start in either July or August 2001. The passage below originates from internal Microsoft correspondence dating back to December 2001.
 

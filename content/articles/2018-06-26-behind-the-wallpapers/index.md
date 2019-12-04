@@ -3,7 +3,7 @@ title: Behind the wallpapers
 author: Melcher
 type: post
 date: 2018-06-26T22:17:33+00:00
-url: /behind-the-wallpapers
+url: /behind-the-wallpapers/
 featured_image: ws_Vista_grass_1600x1200.jpg
 categories:
   - History

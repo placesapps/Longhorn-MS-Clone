@@ -3,7 +3,7 @@ title: True meaning of RMA
 author: Melcher
 type: post
 date: 2016-08-17T09:15:54+00:00
-url: /true-meaning-of-rma
+url: /true-meaning-of-rma/
 featured_image: 4008-rma-tile.png
 categories:
   - History

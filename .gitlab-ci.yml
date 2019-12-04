@@ -3,6 +3,7 @@ image: registry.gitlab.com/pages/hugo:latest
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_ENV: production
   
 before_script:
   - apk add --update --no-cache git

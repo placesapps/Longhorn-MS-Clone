@@ -3,7 +3,7 @@ title: My TV and Movies
 author: Melcher
 type: post
 date: 2014-10-25T20:17:03+00:00
-url: /my-tv-and-movies
+url: /my-tv-and-movies/
 featured_image: mytv-guide.png
 categories:
   - Features

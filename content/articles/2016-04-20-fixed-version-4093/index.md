@@ -3,7 +3,7 @@ title: Proper 4093 release
 author: Melcher
 type: post
 date: 2016-04-20T18:08:50+00:00
-url: /fixed-version-4093
+url: /fixed-version-4093/
 featured_image: 4093-fixed-1.png
 categories:
   - Downloads

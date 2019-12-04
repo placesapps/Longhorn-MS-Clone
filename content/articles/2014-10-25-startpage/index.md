@@ -3,13 +3,13 @@ title: Startpage
 author: Melcher
 type: post
 date: 2014-10-25T15:48:28+00:00
-url: /startpage
+url: /startpage/
 featured_image: startpage-3718.png
 categories:
   - Features
 
 ---
-The Longhorn Startpage is a feature present in Milestone 3 builds. The startpage appears to be an early attempt at replacing the [OOBE (Out-Of-Box Experience)](/oobe) that these builds carry over from Windows XP.
+The Longhorn Startpage is a feature present in Milestone 3 builds. The startpage appears to be an early attempt at replacing the [OOBE (Out-Of-Box Experience)](/oobe/) that these builds carry over from Windows XP.
 
 Already in build 3683 we can catch a glimpse of the startpage, be it in a very early stage. The code for the startpage can be found in the assemblies _Microsoft.Windows.Client.dll_ and _ShellInterop.dll_ It's interesting to note that one assembly holds both the CAML and XAML for the startpage (which differ a tiny bit from each other) and the other assembly holds the code back-end of the whole thing. A "PromotionsTile' that is loaded just shows up as a solid black color.
 

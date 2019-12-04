@@ -3,21 +3,22 @@ title: Avalon Display Panel
 author: Melcher
 type: post
 date: 2014-10-25T19:33:31+00:00
-url: /avalon-display-panel
+url: /avalon-display-panel/
 featured_image: display-panel-3683.png
 categories:
   - Features
 
 ---
-Only two builds, build 3683 and build 4093 have a working, accessible Display Properties control panel, out of the box. These two Avalon display panels are extremely different in construction, and it is entirely possible that the two are the result of two entirely different development efforts, baring no connection beyond their function and underlying technology. Later Milestone 3 builds can have the 3683-style enabled through the use of a registry key, as detailed below.
+
+There are two distinct "new" display control panels developed prior to the Longhorn reset. The first appeared in Milestone 3, and was removed in early Milestone 4. The second was present only in [build 4093](/builds/4093/). Though both are created in the Avalon UI framework, it seems almost certain that the two efforts were not connected beyond their functionality and underlying technology.
 
 #### Milestone 3
 
-In build 3683, it is accessible by right-clicking on the desktop and selecting Properties from the right click menu, as one would with any previous version of Windows. The Avalon display panel in 3683 has a number of bugs however. Later builds have even further bugs, caused by a lack of further development to ensure that it kept pace with the rapidly changing framework. The last confirmed build to contain the Milestone 3 Avalon display panel is 4001.
+In [build 3683](/builds/3683/), it is accessible out-of-the-box by right-clicking on the desktop and selecting Properties from the right click menu, as one would with any previous version of Windows. The Avalon display panel in 3683 has a number of bugs however. Later builds do not have this new panel enabled out of the box. Once enabled though, they have even further bugs, caused by a lack of further development to ensure that it remained compatible with the rapidly changing Avalon framework. The last confirmed build to contain the Milestone 3 Avalon display panel is [4001](/builds/4001/).
 
 ![](display-panel-3683.png)
 
-It was first activated in one of the other Milestone 3 builds as part of the protoPlex Project in early 2008 as depicted in the screenshot below. It was achieved by simply copying in the 3683 desk.cpl, and executing that rather than the version native to that build. This step was then forgotten about and was not investigated further. In 2012, this screenshot was rediscovered, prompting further investigation. This investigation has revealed that it can be enabled in other 3xxx builds by simply using the registry file below:
+It was first activated in one of the other Milestone 3 builds as part of the protoPlex Project in early 2008. It was achieved by simply copying in the 3683 desk.cpl, and executing that rather than the version native to that build. This step was then forgotten about and was not investigated further. In 2012, this screenshot was rediscovered, prompting further investigation. This investigation has revealed that it can be enabled in other Milestone 3 builds by simply using the registry file below:
 
 {{< highlight reg >}}
 Windows Registry Editor Version 5.00
@@ -26,7 +27,7 @@ Windows Registry Editor Version 5.00
 "ClassicDisplayCPL"=dword:00000000
 {{< / highlight >}}
 
-This works because 3683 assumes that if this registry key doesn’t exist, then the user has indicated that they want to use the new display panel. In later builds, this behaviour was changed so that it required the registry key to be present and explicitly set to 0 before displaying the new panel.
+This value is checked in all builds with the display panel present. However, there is a difference between the check in 3683 and later builds which explains why it works out of the box in 3683, but requires the value set in later builds. In 3683, the display panel is shown if the `SHRegGetValueW` call fails or the returned value is not 1. In later builds, this has been fixed so that the display panel is only shown if the `SHRegGetValueW` call succeeds or the value returned is 1. Logically, the latter behaviour is correct, so it makes sense to reason that this was a bug fix by Microsoft. With the original check, the `SHRegGetValueW` call could fail for any number of reasons, and not just because the registry key is not present, potentially causing unintended side-effects.
 
 ![](display-panel-3718.png)
 

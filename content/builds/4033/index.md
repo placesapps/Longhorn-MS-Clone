@@ -1,7 +1,7 @@
 ---
 title: "4033.main"
 type: build
-url: /builds/4033-main
+url: /builds/4033-main/
 build_tag: "6.0.4033.0.main.030717-1555"
 build_arch: [ "x86" ]
 build_m: 6

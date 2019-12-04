@@ -1,7 +1,7 @@
 ---
 title: "4015.main"
 type: build
-url: /builds/4015-main
+url: /builds/4015-main/
 build_tag: "6.0.4015.0.main.030328-1500"
 build_arch: [ "x86" ]
 build_m: 5

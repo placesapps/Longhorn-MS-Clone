@@ -3,7 +3,7 @@ title: Some build
 author: Melcher
 type: post
 date: 2017-05-17T17:47:17+00:00
-url: /some-build
+url: /some-build/
 featured_image: 408x-2.png
 categories:
   - History
@@ -19,7 +19,7 @@ The image below is the only overview shot of this build we get to see in this vi
 
 ![](408xoverview.png)
 
-The explorer style does indeed suggest we're dealing with a late Longhorn build: no plus sign in front of the "Storage favourites' item and no folder image in the preview pane behind the "X item in this folder' text both of which were still present in build 4074. Moreover, the iconic tree wallpaper seen in builds [4084](/builds/4084), [4088](/builds/4088) and [4093](/builds/4093) is present.
+The explorer style does indeed suggest we're dealing with a late Longhorn build: no plus sign in front of the "Storage favourites' item and no folder image in the preview pane behind the "X item in this folder' text both of which were still present in build 4074. Moreover, the iconic tree wallpaper seen in builds [4084](/builds/4084/), [4088](/builds/4088/) and [4093](/builds/4093/) is present.
 
 ![](408x-2.png)
 

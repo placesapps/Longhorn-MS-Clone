@@ -1,7 +1,7 @@
 ---
 title: "4008.main"
 type: build
-url: /builds/4008
+url: /builds/4008/
 build_tag: "6.0.4008.0.main.030219-1933"
 build_arch: [ "x86" ]
 build_m: 4

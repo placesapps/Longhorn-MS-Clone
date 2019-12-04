@@ -1,7 +1,7 @@
 ---
 title: "4018.Lab06_n"
 type: build
-url: /builds/4018
+url: /builds/4018/
 build_tag: "6.0.4018.Lab06_n.030417-1721"
 build_arch: [ "x86" ]
 build_m: 5

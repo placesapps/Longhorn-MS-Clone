@@ -4,7 +4,7 @@ author: Melcher
 type: post
 date: 2016-01-28T14:25:46+00:00
 draft: true
-url: /longhorn-4074-vm
+url: /longhorn-4074-vm/
 featured_image: vm.png
 categories:
   - Downloads
@@ -22,7 +22,7 @@ The VM contains a vanilla 4074 installation with the following bits changed:
   * enabled MILExplorer in registry
   * removed 180 day evaluation restriction
 
-Note that the VM was created in VMware Workstation 7.1.4 and should also be used with that version of VMware. **When restarting the VM it probably wants to active right away. Be sure to start into some WinPE environment so you can apply the [winlogon crack](/activation-cracks).**
+Note that the VM was created in VMware Workstation 7.1.4 and should also be used with that version of VMware. **When restarting the VM it probably wants to active right away. Be sure to start into some WinPE environment so you can apply the [winlogon crack](/activation-cracks/).**
 
 Once unpacked, the VM is 5.59 gigabytes in size. Note that the VM was created on a computer with a 4th generation core i5. Processors with feature-set vastly different from this may not work well with this VM.
 

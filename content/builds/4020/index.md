@@ -1,7 +1,7 @@
 ---
 title: "4020.idx02"
 type: build
-url: /builds/4020
+url: /builds/4020/
 build_tag: "6.0.4020.0.idx02.030507-1155"
 build_arch: [ "x86" ]
 build_m: 5

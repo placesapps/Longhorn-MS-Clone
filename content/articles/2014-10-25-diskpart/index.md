@@ -3,7 +3,7 @@ title: Diskpart
 author: Melcher
 type: post
 date: 2014-10-25T16:33:28+00:00
-url: /diskpart
+url: /diskpart/
 featured_image: longhorn-setup.png
 categories:
   - User Guides

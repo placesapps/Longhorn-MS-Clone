@@ -3,7 +3,7 @@ title: '4039 Tips & tricks'
 author: Melcher
 type: post
 date: 2015-08-10T11:53:14+00:00
-url: /4039-tips-tricks
+url: /4039-tips-tricks/
 categories:
   - Features
   - User Guides
@@ -13,7 +13,7 @@ This is the very first page in its kind; a tips 'n tricks page. More of these pa
 
 #### Enable Aero glass {#aero-glass}
 
-This build contains some super sleek Aero glass resources in desksrv.dll for the theming service to use. By default, the opaque resources will be used, but a simple patch of desksrv.dll enables the glass borders on windows when DCE is running. For a tutorial on how to enable DCE please see [this page](/desktop-compositing). The desksrv patch involves simply replacing the opaque PNG files with the transparent ones. While this is neat and all, it's not a very original way of doing things. Luckily there is a much more convenient and original trick to enable transparent borders.
+This build contains some super sleek Aero glass resources in desksrv.dll for the theming service to use. By default, the opaque resources will be used, but a simple patch of desksrv.dll enables the glass borders on windows when DCE is running. For a tutorial on how to enable DCE please see [this page](/desktop-compositing/). The desksrv patch involves simply replacing the opaque PNG files with the transparent ones. While this is neat and all, it's not a very original way of doing things. Luckily there is a much more convenient and original trick to enable transparent borders.
 
 1. Browse to the themes folder, C:\Windows\Resources\Themes\
 2. Copy the Plex folder and rename it to Aero.

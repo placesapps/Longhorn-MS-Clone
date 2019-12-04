@@ -3,7 +3,7 @@ title: 64-bit Windows
 author: Melcher
 type: post
 date: 2014-10-31T19:47:10+00:00
-url: /64-bit-windows
+url: /64-bit-windows/
 featured_image: amd64.jpg
 categories:
   - History

@@ -3,7 +3,7 @@ title: Exposing a spy
 author: Melcher
 type: post
 date: 2016-01-11T10:39:45+00:00
-url: /exposing-a-spy
+url: /exposing-a-spy/
 featured_image: phodeo-top.png
 categories:
   - Features

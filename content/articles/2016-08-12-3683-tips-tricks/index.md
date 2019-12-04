@@ -3,7 +3,7 @@ title: '3683 Tips & tricks'
 author: Melcher
 type: post
 date: 2016-08-12T19:40:50+00:00
-url: /3683-tips-tricks
+url: /3683-tips-tricks/
 featured_image: 3683.png
 categories:
   - Features
@@ -18,7 +18,7 @@ WinFS, in contrast to later builds, indexes the complete root drive of the compu
 
 ### StartUp Applications Monitor
 
-Even though this feature was already available through another tool -_msconfig_ - this is a more user friendly way of presenting applications that automatically start with Windows. This tab is found in Performance settings in System Properties.
+Even though this feature was already available through another tool - _msconfig_ - this is a more user friendly way of presenting applications that automatically start with Windows. This tab is found in Performance settings in System Properties.
 
 ![](StartUp-Application-Monitor.png)
 

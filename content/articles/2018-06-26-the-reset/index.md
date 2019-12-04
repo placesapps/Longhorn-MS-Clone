@@ -3,15 +3,15 @@ title: The reset
 author: Melcher
 type: post
 date: 2018-06-26T22:25:14+00:00
-url: /the-reset
+url: /the-reset/
 featured_image: 4042-2014-11-17-14-34-01.png
 categories:
   - History
 
 ---
-The piece of text you read below was originally part of the "[Guide](/builds)" section present on the very first iteration of the "Experience Longhorn" site. Since the switch to WordPress as a CMS and all changes to the theme there has been no more place to have it on what is now called the [Builds list](/builds). I really didn't want to throw the story on the reset away though, so here you have it: a short an concise explanation about the infamous Longhorn reset.
+The piece of text you read below was originally part of the "[Guide](/builds/)" section present on the very first iteration of the "Experience Longhorn" site. Since the switch to WordPress as a CMS and all changes to the theme there has been no more place to have it on what is now called the [Builds list](/builds/). I really didn't want to throw the story on the reset away though, so here you have it: a short an concise explanation about the infamous Longhorn reset.
 
-The newest Windows product at the time of the reset in late 2004 was Windows Server 2003 sp1 RC, which was used as a base after the reset. The new codebase was first componentised before any new features were added to it. Work on componentising the Server 2003 codebase had already begun weeks before build 4093 was compiled. The post-reset range started at build 5000. The first post-reset builds were compiled by the [vbl_core](/builds/branch/base/vbl_core) lab. The last pre-reset build compiled probably is 4094.private/Lab06\_dev\_tech(skatari).
+The newest Windows product at the time of the reset in late 2004 was Windows Server 2003 sp1 RC, which was used as a base after the reset. The new codebase was first componentised before any new features were added to it. Work on componentising the Server 2003 codebase had already begun weeks before build 4093 was compiled. The post-reset range started at build 5000. The first post-reset builds were compiled by the [vbl_core](/builds/branch/base/vbl_core/) lab. The last pre-reset build compiled probably is 4094.private/Lab06\_dev\_tech(skatari).
 
 ### When did this happen?
 

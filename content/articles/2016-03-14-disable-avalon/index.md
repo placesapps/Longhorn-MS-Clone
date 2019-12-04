@@ -3,7 +3,7 @@ title: 'Hacking Avalon – 1: Disable it'
 author: Melcher
 type: post
 date: 2016-03-14T22:01:47+00:00
-url: /disable-avalon
+url: /disable-avalon/
 featured_image: hackingavalon.png
 categories:
   - History

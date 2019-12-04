@@ -3,7 +3,7 @@ title: Hexadecimal notation
 author: Melcher
 type: post
 date: 2015-05-14T14:07:38+00:00
-url: /hexadecimal-system
+url: /hexadecimal-system/
 featured_image: hex-field.png
 categories:
   - History

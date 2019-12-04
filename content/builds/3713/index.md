@@ -1,7 +1,7 @@
 ---
 title: "3713.Lab06_N"
 type: build
-url: /builds/3713
+url: /builds/3713/
 build_tag: "6.0.3713.0.Lab06_N.021113-1841"
 build_arch: [ "x86" ]
 build_m: 3

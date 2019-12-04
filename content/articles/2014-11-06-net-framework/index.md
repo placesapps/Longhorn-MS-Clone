@@ -3,7 +3,7 @@ title: .NET framework
 author: Melcher
 type: post
 date: 2014-11-06T20:17:10+00:00
-url: /net-framework
+url: /net-framework/
 featured_image: null
 categories:
   - History

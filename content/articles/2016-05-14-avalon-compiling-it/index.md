@@ -3,7 +3,7 @@ title: 'Hacking Avalon – 3: Compiling xaml'
 author: Melcher
 type: post
 date: 2016-05-14T12:56:07+00:00
-url: /avalon-compiling-it
+url: /avalon-compiling-it/
 featured_image: xaml-direct.png
 categories:
   - History

@@ -1,7 +1,7 @@
 ---
 title: "4001.main"
 type: build
-url: /builds/4001
+url: /builds/4001/
 build_tag: "6.0.4001.0.main.021204-1515"
 build_arch: [ "x86" ]
 build_m: 4

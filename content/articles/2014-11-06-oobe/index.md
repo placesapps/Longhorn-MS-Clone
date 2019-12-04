@@ -3,13 +3,13 @@ title: Out-of-box experience
 author: Melcher
 type: post
 date: 2014-11-06T13:06:36+00:00
-url: /oobe
+url: /oobe/
 featured_image: 1.png
 categories:
   - Features
 
 ---
-With the new image-based installation introduced in Milestone 4 it was also time for a revamped out-of-box experience (OOBE) wizard. The first build to feature the image-based install and new OOBE wizard is [build 4001](/guide/b4001).
+With the new image-based installation introduced in Milestone 4 it was also time for a revamped out-of-box experience (OOBE) wizard. The first build to feature the image-based install and new OOBE wizard is [build 4001](/guide/4001/).
 
 After a brief time loading at the "Please wait&#8230;' page you will find yourself at the _WelcomePage_ where you will be welcomed to the wizard. On the next page, _aacnamepage_, you can add as many users as you like. After doing this, you will find yourself at _FinishPage_. Even though this really is the end of the setup, the text on the page suggests that the setup continous after this page:
 

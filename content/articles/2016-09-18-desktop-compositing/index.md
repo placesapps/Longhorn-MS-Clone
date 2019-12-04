@@ -3,7 +3,7 @@ title: Desktop Compositing
 author: Melcher
 type: post
 date: 2016-09-18T11:48:55+00:00
-url: /desktop-compositing
+url: /desktop-compositing/
 featured_image: aero-flip.png
 categories:
   - Features
@@ -142,7 +142,7 @@ C:\Windows\i386\sbctl start
 C:\Windows\i386\sbctl stop
 ```
 
-In most cases a restart of explorer is required to make the task- and sidebar visible again. Build 4033 has a bug in DCE which causes it to automatically fall-back to CPU processing instead of hardware processing. Therefore, running DCE in this build will not unlock the special borders. By default builds 4039 and 4042 have an opaque theme. You can, however, perform the trick [described here](/4039-tips-tricks) to enable Aero glass.
+In most cases a restart of explorer is required to make the task- and sidebar visible again. Build 4033 has a bug in DCE which causes it to automatically fall-back to CPU processing instead of hardware processing. Therefore, running DCE in this build will not unlock the special borders. By default builds 4039 and 4042 have an opaque theme. You can, however, perform the trick [described here](/4039-tips-tricks/) to enable Aero glass.
 
 ### 4066
 {{< figure src="4066-dwm.png" title="DWM on 4066, resulting in some blurry green borders." >}}

@@ -3,7 +3,7 @@ title: Revisiting the Online Photo Print Wizard
 author: Melcher
 type: post
 date: 2017-05-14T14:09:12+00:00
-url: /revisiting-the-online-photo-print-wizard
+url: /revisiting-the-online-photo-print-wizard/
 featured_image: 4042-2017-05-14-13-53-05.png
 categories:
   - Features

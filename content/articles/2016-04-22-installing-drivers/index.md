@@ -3,7 +3,7 @@ title: Installing drivers
 author: Melcher
 type: post
 date: 2016-04-22T15:01:27+00:00
-url: /installing-drivers
+url: /installing-drivers/
 featured_image: hard-wiz-err-3.png
 categories:
   - User Guides

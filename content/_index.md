@@ -1,5 +1,5 @@
 ---
-title: "Experience Longhorn"
+title: "Microsoft Longhorn"
 ---
 
 # "Long what?"

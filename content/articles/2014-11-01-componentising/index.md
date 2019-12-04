@@ -3,7 +3,7 @@ title: Componentising
 author: Melcher
 type: post
 date: 2014-11-01T14:35:28+00:00
-url: /componentising
+url: /componentising/
 featured_image: targetdesigner.png
 categories:
   - Features

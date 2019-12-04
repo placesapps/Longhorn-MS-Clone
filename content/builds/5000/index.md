@@ -1,7 +1,7 @@
 ---
 title: "5000.vbl_core"
 type: build
-url: /builds/5000
+url: /builds/5000/
 build_tag: "6.0.5000.0.vbl_core.040803-2000"
 build_arch: [ "x86" ]
 build_m: "Omega-13"

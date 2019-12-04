@@ -1,7 +1,7 @@
 ---
 title: "4066.main"
 type: build
-url: /builds/4066
+url: /builds/4066/
 build_tag: "6.0.4066.0.main.040226-1010"
 build_arch: [ "x86" ]
 build_m: 7

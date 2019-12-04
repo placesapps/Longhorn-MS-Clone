@@ -3,7 +3,7 @@ title: Virtual development
 author: Melcher
 type: post
 date: 2015-04-17T15:19:42+00:00
-url: /vbl
+url: /vbl/
 featured_image: null
 categories:
   - History

@@ -3,7 +3,7 @@ title: 'Hacking Avalon – 2: Port it'
 author: Melcher
 type: post
 date: 2016-04-08T13:25:55+00:00
-url: /installing-avalon-nt
+url: /installing-avalon-nt/
 featured_image: avalon-on-xp.png
 categories:
   - History
