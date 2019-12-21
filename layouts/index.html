@@ -13,14 +13,26 @@
     {{ $section_name := index (.Site.Params.mainSections) 0 }}
 
     <div class="pa3 pa4-ns w-100 w-70-ns center">
+
+      {{ range $key, $value := .Site.Taxonomies }}
+      <section class="w-100">
+        <h1 class="flex-non">{{ humanize $key }}</h1>
+        {{ range $value }}
+          <h2 class="f5 fw4 dib mv1 mr3">
+            <a href="{{ .Page.RelPermalink }}" class="link black dim">{{ .Page.Title }}</a>
+          </h2>
+        {{ end }}
+      </section>
+      {{ end }}
+
       {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
        {{ with .Site.GetPage "section" $section_name }}
-          <h1 class="flex-none">
+          <h1 class="flex-none mb0">
             {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
           </h1>
         {{ end }}
 
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+      {{ $n_posts := $.Param "recent_posts_number" | default 5 }}
 
       <section class="w-100 mw8">
         {{/* Range through the first $n_posts items of the section */}}
@@ -30,17 +42,6 @@
           </div>
         {{ end }}
       </section>
-
-      {{ range $key, $value := .Site.Taxonomies }}
-      <section class="w-100">
-        <h1 class="f3">{{ humanize $key }}</h1>
-        {{ range $value }}
-          <h2 class="f5 fw4 dib mv1 mr3">
-            <a href="{{ .Page.RelPermalink }}" class="link black dim">{{ .Page.Title }}</a>
-          </h2>
-        {{ end }}
-      </section>
-      {{ end }}
 
       {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
       {{ with .Site.GetPage "section" $section_name }}
