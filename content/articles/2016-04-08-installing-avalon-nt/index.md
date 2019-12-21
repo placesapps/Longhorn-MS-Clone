@@ -36,12 +36,12 @@ Since many features in Longhorn were originally being developer separately from 
 
 Before using the Longhorn feature installer, be sure to install .NET framework version 1. You can download [the redistributable here](https://www.microsoft.com/en-us/download/details.aspx?id=96).
 
-  1. Extract the zip -_Make sure the path to this directory contains no spaces or the installer will break_
-  2. Execute _AvalonInstallWrapper_.bat
+  1. Extract the zip - _Make sure the path to this directory contains no spaces or the installer will break_
+  2. Execute `AvalonInstallWrapper.bat`
   3. Wait for the installer to copy some files
   4. A Windows Component Wizard will appear
   5. Select the components you wish to install
-  6. When prompted for a directory, point to the _LonghornFiles_ directory in the extracted folder
+  6. When prompted for a directory, point to the `LonghornFiles` directory in the extracted folder
   7. Wait for the wizard to finish
 
 [3683 feature installer for NT 5.x](/download/3683-feature-installer-nt-5-x.zip)
