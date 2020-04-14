@@ -18,4 +18,4 @@ Although this build is visually and functionally similar to 5112, it still bears
 
 ### Gallery
 
-{{< gallery 50 "setup.png" desktop.png" "demo.png" >}}
+{{< gallery third "setup.png" desktop.png" "demo.png" >}}
